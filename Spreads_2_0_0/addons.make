@@ -1,0 +1,14 @@
+ofxOsc
+ofxSvg
+ofxXmlSettings
+ofxFenster
+ofxFft
+ofxFX
+ofxMidi
+ofxMSACore
+ofxMSAFluid
+ofxMSAInteractiveObject
+ofxMSAObjCPointer
+ofxMSAPhysics
+ofxMSATimer
+ofxSimpleGuiToo
