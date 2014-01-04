@@ -107,6 +107,6 @@ private:
 private:
     // New display system
     ofdSpreadDisplay m_spreadDisplay;
-    ofxFenster* mp_pointerSpreadDisplay;
+    //ofxFenster* mp_pointerSpreadDisplay;
     
 };

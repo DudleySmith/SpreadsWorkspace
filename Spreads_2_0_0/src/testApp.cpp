@@ -26,16 +26,16 @@ void testApp::setup()
 
 
 void testApp::createDisplay(){
-    //spreadDisplay=ofxFensterManager::get()->createFenster(400, 300, 1024, 800, OF_WINDOW);;
-    //spreadDisplay->addListener(new ofdSpreadDisplay());
-    //:spreadDisplay->setBackgroundColor(ofRandom(255), ofRandom(255), ofRandom(255));
-    
+    /*
     mp_pointerSpreadDisplay = ofxFensterManager::get()->createFenster(1600, 0, 1600, 900, OF_WINDOW);
     mp_pointerSpreadDisplay->addListener(&m_spreadDisplay);
     mp_pointerSpreadDisplay->setBackgroundColor(0,0,0);
+    */
     
     //setup of fensterListener does not get called automatically yet
-	mp_pointerSpreadDisplay->setup();
+    ofxFensterManager::get()->setupWindow(&m_spreadDisplay);
+	//mp_pointerSpreadDisplay->setup();
+    
 }
 
 void testApp::setupMSA(){
