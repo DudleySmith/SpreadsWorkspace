@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../../addons/ofxSyphon/example-Basic/ofxSyphonExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../addons/ofxFenster/example/ofxFensterExample.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "container:Spreads_2_0_0/Spreads_2_0_0.xcodeproj">
+   </FileRef>
+</Workspace>
