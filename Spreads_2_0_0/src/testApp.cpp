@@ -4,12 +4,18 @@
 void testApp::setup()
 {
     m_trace.init(true, "GUI");
+    ofSetLogLevel(OF_LOG_VERBOSE);
     
     ofSetWindowTitle("Spreads : Interface");
     createDisplay();
     
     // First Load Settings -----------------------------------
     loadSettings();
+    
+    // COLORS -------------------------
+    // Load colors
+    mOut_vars.mI_ColorSet.loadFromXml("colorSets.xml");
+    
     // GUI Interface -----------------------------------------
     m_trace.go("Setup GUI");
     setupGUI();
@@ -354,16 +360,16 @@ void testApp::draw(){
     
     /*
      //ofDrawBitmapString("Controls", 0.5*ofGetWidth(), 0.5*ofGetHeight());
-     ofSetColor(mOut_vars.mI_ColorSet.ofdColorSet::getCurrentSetByIndex(0));
+     ofSetColor(mOut_vars.mI_ColorSet.ofxColorSet::getCurrentSetByIndex(0));
      ofRect(0.5*ofGetWidth(), 0.5*ofGetHeight(), 150, 150);
      
-     ofSetColor(mOut_vars.mI_ColorSet.ofdColorSet::getCurrentSetByIndex(1));
+     ofSetColor(mOut_vars.mI_ColorSet.ofxColorSet::getCurrentSetByIndex(1));
      ofRect(0.5*ofGetWidth(), 0.5*ofGetHeight(), 120, 120);
      
-     ofSetColor(mOut_vars.mI_ColorSet.ofdColorSet::getCurrentSetByIndex(2));
+     ofSetColor(mOut_vars.mI_ColorSet.ofxColorSet::getCurrentSetByIndex(2));
      ofRect(0.5*ofGetWidth(), 0.5*ofGetHeight(), 90, 90);
      
-     ofSetColor(mOut_vars.mI_ColorSet.ofdColorSet::getCurrentSetByIndex(3));
+     ofSetColor(mOut_vars.mI_ColorSet.ofxColorSet::getCurrentSetByIndex(3));
      ofRect(0.5*ofGetWidth(), 0.5*ofGetHeight(), 50, 50);
      
      ofSetColor(mOut_vars._myColor_4);

@@ -14,7 +14,7 @@
 // My addons
 #include "ofdSpreadDisplay.h"
 
-#include "ofdColorSet.h"
+#include "ofxColorSetAnimated.h"
 #include "ofdOsc.h"
 
 //#include "msaFluidParticlesApp.h"
@@ -82,7 +82,6 @@ public:
     //        int getPresetMSANum(){return m_presetMSA;};
     //
 private:
-    ofdColorSetAnimated m_ColorSetBase;
     int m_colorSetNum;
     bool m_loadColorsFromSet;
     

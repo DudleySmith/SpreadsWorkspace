@@ -72,11 +72,13 @@
 		EAD540E61878B591001716BE /* ofxFenster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD540D41878B259001716BE /* ofxFenster.cpp */; };
 		EAD540E71878B591001716BE /* ofxFensterCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD540D61878B259001716BE /* ofxFensterCanvas.cpp */; };
 		EAD540E81878B591001716BE /* ofxFensterManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD540D81878B259001716BE /* ofxFensterManager.cpp */; };
+		EAD5410F1878BE71001716BE /* ofxBasicColorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD541061878BE71001716BE /* ofxBasicColorSet.cpp */; };
+		EAD541101878BE71001716BE /* ofxColorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD541081878BE71001716BE /* ofxColorSet.cpp */; };
+		EAD541111878BE71001716BE /* ofxColorSetAnimated.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAD5410A1878BE71001716BE /* ofxColorSetAnimated.cpp */; };
 		EADF31D217A92E4100B55A44 /* ofdAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF317317A92E4100B55A44 /* ofdAnimation.cpp */; };
 		EADF31D317A92E4100B55A44 /* ofdArduinoClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF317717A92E4100B55A44 /* ofdArduinoClient.cpp */; };
 		EADF31D417A92E4100B55A44 /* ofdArduinoCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF317817A92E4100B55A44 /* ofdArduinoCommon.cpp */; };
 		EADF31D517A92E4100B55A44 /* ofdArduinoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF317A17A92E4100B55A44 /* ofdArduinoServer.cpp */; };
-		EADF31D617A92E4100B55A44 /* ofdColorSet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF317C17A92E4100B55A44 /* ofdColorSet.cpp */; };
 		EADF31D817A92E4100B55A44 /* ofdLinkGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF318217A92E4100B55A44 /* ofdLinkGui.cpp */; };
 		EADF31D917A92E4100B55A44 /* ofdLinksGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF318417A92E4100B55A44 /* ofdLinksGui.cpp */; };
 		EADF31DA17A92E4100B55A44 /* ofdMidiForGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF318817A92E4100B55A44 /* ofdMidiForGui.cpp */; };
@@ -232,7 +234,7 @@
 		E4B69B5B0A3A1756003C02F2 /* SpreadsPsygnosis_OsxDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SpreadsPsygnosis_OsxDebug.app; path = Spreads_2_0_0Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 2; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -243,7 +245,7 @@
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadDisplay.cpp; sourceTree = "<group>"; };
-		EA9A7D8A17ABBEAE00E89067 /* ofdSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadDisplay.h; sourceTree = "<group>"; };
+		EA9A7D8A17ABBEAE00E89067 /* ofdSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadDisplay.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAD53FBA1877156E001716BE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EAD53FD91877156E001716BE /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
 		EAD53FDB1877156E001716BE /* SyphonNameboundClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SyphonNameboundClient.h; sourceTree = "<group>"; };
@@ -330,6 +332,14 @@
 		EAD540D71878B259001716BE /* ofxFensterCanvas.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxFensterCanvas.h; sourceTree = "<group>"; };
 		EAD540D81878B259001716BE /* ofxFensterManager.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = ofxFensterManager.cpp; sourceTree = "<group>"; };
 		EAD540D91878B259001716BE /* ofxFensterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxFensterManager.h; sourceTree = "<group>"; };
+		EAD540F01878BE71001716BE /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EAD541041878BE71001716BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EAD541061878BE71001716BE /* ofxBasicColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBasicColorSet.cpp; sourceTree = "<group>"; };
+		EAD541071878BE71001716BE /* ofxBasicColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBasicColorSet.h; sourceTree = "<group>"; };
+		EAD541081878BE71001716BE /* ofxColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxColorSet.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EAD541091878BE71001716BE /* ofxColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSet.h; sourceTree = "<group>"; };
+		EAD5410A1878BE71001716BE /* ofxColorSetAnimated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSetAnimated.cpp; sourceTree = "<group>"; };
+		EAD5410B1878BE71001716BE /* ofxColorSetAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofxColorSetAnimated.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF317317A92E4100B55A44 /* ofdAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdAnimation.cpp; sourceTree = "<group>"; };
 		EADF317417A92E4100B55A44 /* ofdAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdAnimation.h; sourceTree = "<group>"; };
 		EADF317617A92E4100B55A44 /* ofdArduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdArduino.h; sourceTree = "<group>"; };
@@ -337,8 +347,6 @@
 		EADF317817A92E4100B55A44 /* ofdArduinoCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdArduinoCommon.cpp; sourceTree = "<group>"; };
 		EADF317917A92E4100B55A44 /* ofdArduinoCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdArduinoCommon.h; sourceTree = "<group>"; };
 		EADF317A17A92E4100B55A44 /* ofdArduinoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdArduinoServer.cpp; sourceTree = "<group>"; };
-		EADF317C17A92E4100B55A44 /* ofdColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdColorSet.cpp; sourceTree = "<group>"; };
-		EADF317D17A92E4100B55A44 /* ofdColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdColorSet.h; sourceTree = "<group>"; };
 		EADF318217A92E4100B55A44 /* ofdLinkGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdLinkGui.cpp; sourceTree = "<group>"; };
 		EADF318317A92E4100B55A44 /* ofdLinkGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdLinkGui.h; sourceTree = "<group>"; };
 		EADF318417A92E4100B55A44 /* ofdLinksGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdLinksGui.cpp; sourceTree = "<group>"; };
@@ -350,7 +358,7 @@
 		EADF318B17A92E4100B55A44 /* ofdMidiLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdMidiLink.h; sourceTree = "<group>"; };
 		EADF318C17A92E4100B55A44 /* ofdMidiSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdMidiSettings.h; sourceTree = "<group>"; };
 		EADF319117A92E4100B55A44 /* msaFluidParticlesApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msaFluidParticlesApp.cpp; sourceTree = "<group>"; };
-		EADF319217A92E4100B55A44 /* msaFluidParticlesApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msaFluidParticlesApp.h; sourceTree = "<group>"; };
+		EADF319217A92E4100B55A44 /* msaFluidParticlesApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = msaFluidParticlesApp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF319317A92E4100B55A44 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
 		EADF319417A92E4100B55A44 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
 		EADF319517A92E4100B55A44 /* ParticleSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleSystem.cpp; sourceTree = "<group>"; };
@@ -364,28 +372,28 @@
 		EADF319F17A92E4100B55A44 /* ofdForce.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdForce.cpp; sourceTree = "<group>"; };
 		EADF31A017A92E4100B55A44 /* ofdForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdForce.h; sourceTree = "<group>"; };
 		EADF31A117A92E4100B55A44 /* ofdPart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdPart.cpp; sourceTree = "<group>"; };
-		EADF31A217A92E4100B55A44 /* ofdPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdPart.h; sourceTree = "<group>"; };
+		EADF31A217A92E4100B55A44 /* ofdPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdPart.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31A317A92E4100B55A44 /* ofdParticles_Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdParticles_Settings.cpp; sourceTree = "<group>"; };
 		EADF31A417A92E4100B55A44 /* ofdParticles_Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdParticles_Settings.h; sourceTree = "<group>"; };
 		EADF31A517A92E4100B55A44 /* ofdWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdWorld.cpp; sourceTree = "<group>"; };
-		EADF31A617A92E4100B55A44 /* ofdWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdWorld.h; sourceTree = "<group>"; };
+		EADF31A617A92E4100B55A44 /* ofdWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdWorld.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31A817A92E4100B55A44 /* ofdRay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdRay.cpp; sourceTree = "<group>"; };
 		EADF31A917A92E4100B55A44 /* ofdRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdRay.h; sourceTree = "<group>"; };
 		EADF31AA17A92E4100B55A44 /* ofdRays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdRays.cpp; sourceTree = "<group>"; };
-		EADF31AB17A92E4100B55A44 /* ofdRays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdRays.h; sourceTree = "<group>"; };
+		EADF31AB17A92E4100B55A44 /* ofdRays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdRays.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31AD17A92E4100B55A44 /* ofdPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdPattern.cpp; sourceTree = "<group>"; };
 		EADF31AE17A92E4100B55A44 /* ofdPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdPattern.h; sourceTree = "<group>"; };
 		EADF31B117A92E4100B55A44 /* ofdSpreadElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadElement.cpp; sourceTree = "<group>"; };
 		EADF31B217A92E4100B55A44 /* ofdSpreadElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadElement.h; sourceTree = "<group>"; };
 		EADF31B317A92E4100B55A44 /* ofdSpreadFullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadFullShape.cpp; sourceTree = "<group>"; };
 		EADF31B417A92E4100B55A44 /* ofdSpreadFullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadFullShape.h; sourceTree = "<group>"; };
-		EADF31B517A92E4100B55A44 /* ofdSpreadGuiToApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadGuiToApp.h; sourceTree = "<group>"; };
+		EADF31B517A92E4100B55A44 /* ofdSpreadGuiToApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadGuiToApp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31B817A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadGuiWindowWithOsc.cpp; sourceTree = "<group>"; };
-		EADF31B917A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadGuiWindowWithOsc.h; sourceTree = "<group>"; };
+		EADF31B917A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadGuiWindowWithOsc.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31BA17A92E4100B55A44 /* ofdSpreadPatterns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadPatterns.cpp; sourceTree = "<group>"; };
 		EADF31BB17A92E4100B55A44 /* ofdSpreadPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadPatterns.h; sourceTree = "<group>"; };
 		EADF31BC17A92E4100B55A44 /* ofdSpreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads.cpp; sourceTree = "<group>"; };
-		EADF31BD17A92E4100B55A44 /* ofdSpreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreads.h; sourceTree = "<group>"; };
+		EADF31BD17A92E4100B55A44 /* ofdSpreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreads.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31BE17A92E4100B55A44 /* ofdSpreads_GenSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads_GenSettings.cpp; sourceTree = "<group>"; };
 		EADF31BF17A92E4100B55A44 /* ofdSpreads_GenSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreads_GenSettings.h; sourceTree = "<group>"; };
 		EADF31C017A92E4100B55A44 /* ofdSpreads_InitShapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads_InitShapes.cpp; sourceTree = "<group>"; };
@@ -405,7 +413,7 @@
 		EAEF0ACE17AA7E5200ACF68E /* ofdOscPatternMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdOscPatternMessage.cpp; sourceTree = "<group>"; };
 		EAEF0ACF17AA7E5200ACF68E /* ofdOscPatternMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdOscPatternMessage.h; sourceTree = "<group>"; };
 		EAEF248817AEA745002CE877 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = bin/data; sourceTree = "<group>"; };
-		a03b32b28652d6533c3a1c790d189fbf /* MSAFluidDrawerBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAFluidDrawerBase.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.h; sourceTree = SOURCE_ROOT; };
+		a03b32b28652d6533c3a1c790d189fbf /* MSAFluidDrawerBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; lineEnding = 0; name = MSAFluidDrawerBase.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		a0e48fd05bda9491dca86aaa03c55ab1 /* MSAFluidDrawerBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MSAFluidDrawerBase.cpp; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.cpp; sourceTree = SOURCE_ROOT; };
 		a2aaa8ca403479e6fcdf920ebcd1682b /* OscHostEndianness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscHostEndianness.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h; sourceTree = SOURCE_ROOT; };
 		a5c54a5752a9362986db5b350961b7de /* ofxSimpleGuiControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiControl.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiControl.cpp; sourceTree = SOURCE_ROOT; };
@@ -724,12 +732,8 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
-				EAD540AF1878B258001716BE /* ofxFenster */,
-				EAD5407A1878AF5C001716BE /* ofxSyphon */,
-				EAD53FFB1878AEB0001716BE /* ofxMidi */,
 				EADF317217A92E4100B55A44 /* ofdAnimation */,
 				EADF317517A92E4100B55A44 /* ofdArduino */,
-				EADF317B17A92E4100B55A44 /* ofdColorSet */,
 				EADF318117A92E4100B55A44 /* ofdLinksGui */,
 				EADF318717A92E4100B55A44 /* ofdMidiForGui */,
 				EADF319017A92E4100B55A44 /* ofdMSADemo */,
@@ -740,6 +744,9 @@
 				EADF31C917A92E4100B55A44 /* ofdTimer */,
 				EADF31CC17A92E4100B55A44 /* ofdTools */,
 				EADF31D017A92E4100B55A44 /* ofdTrace */,
+				EAD540EF1878BE71001716BE /* ofxColorSet */,
+				EAD540AF1878B258001716BE /* ofxFenster */,
+				EAD53FFB1878AEB0001716BE /* ofxMidi */,
 				f8790dcd2e062df9aa47e8107008616d /* ofxMSACore */,
 				d3f713a22a3c00bcdadcebed2b8551df /* ofxMSAFluid */,
 				734ac65571adbb395c126c1aeb876186 /* ofxMSAInteractiveObject */,
@@ -749,6 +756,7 @@
 				e6053ab7fec63d5f83825b880ce53c41 /* ofxOsc */,
 				cfdd139fa301cd9d0914d00f9e1d4fdc /* ofxSimpleGuiToo */,
 				f5f1f1ef8441e64fd46f07c86bfc7ba6 /* ofxSvg */,
+				EAD5407A1878AF5C001716BE /* ofxSyphon */,
 				EAD53FB91877156E001716BE /* ofxSyphon */,
 				1f4fb5c423662b96adfdcc0badec1cb0 /* ofxXmlSettings */,
 			);
@@ -1121,6 +1129,30 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		EAD540EF1878BE71001716BE /* ofxColorSet */ = {
+			isa = PBXGroup;
+			children = (
+				EAD540F01878BE71001716BE /* .gitignore */,
+				EAD541041878BE71001716BE /* README.md */,
+				EAD541051878BE71001716BE /* src */,
+			);
+			name = ofxColorSet;
+			path = ../../../addons/ofxColorSet;
+			sourceTree = "<group>";
+		};
+		EAD541051878BE71001716BE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EAD541061878BE71001716BE /* ofxBasicColorSet.cpp */,
+				EAD541071878BE71001716BE /* ofxBasicColorSet.h */,
+				EAD541081878BE71001716BE /* ofxColorSet.cpp */,
+				EAD541091878BE71001716BE /* ofxColorSet.h */,
+				EAD5410A1878BE71001716BE /* ofxColorSetAnimated.cpp */,
+				EAD5410B1878BE71001716BE /* ofxColorSetAnimated.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		EADF317217A92E4100B55A44 /* ofdAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1142,16 +1174,6 @@
 			);
 			name = ofdArduino;
 			path = ../../../addons/ofdArduino;
-			sourceTree = "<group>";
-		};
-		EADF317B17A92E4100B55A44 /* ofdColorSet */ = {
-			isa = PBXGroup;
-			children = (
-				EADF317C17A92E4100B55A44 /* ofdColorSet.cpp */,
-				EADF317D17A92E4100B55A44 /* ofdColorSet.h */,
-			);
-			name = ofdColorSet;
-			path = ../../../addons/ofdColorSet;
 			sourceTree = "<group>";
 		};
 		EADF318117A92E4100B55A44 /* ofdLinksGui */ = {
@@ -1530,6 +1552,7 @@
 				EAD540DF1878B50C001716BE /* SyphonNameboundClient.m in Sources */,
 				EAD540E01878B50C001716BE /* ofxSyphonClient.mm in Sources */,
 				EAD540E11878B50C001716BE /* ofxSyphonServer.mm in Sources */,
+				EAD541111878BE71001716BE /* ofxColorSetAnimated.cpp in Sources */,
 				EAD540E21878B50C001716BE /* ofxSyphonServerDirectory.mm in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
@@ -1552,6 +1575,7 @@
 				4294163b15857489b21767695156d95b /* svgtiny_gradient.cpp in Sources */,
 				1b5f996886a777589d5dd7949f25ec5e /* svgtiny_list.cpp in Sources */,
 				63b57ac5bf4ef088491e0317dbb2ecaa /* ofxXmlSettings.cpp in Sources */,
+				EAD5410F1878BE71001716BE /* ofxBasicColorSet.cpp in Sources */,
 				933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */,
 				9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */,
 				5a4349e9754d6fa14c0f2a3a1abc30b6 /* tinyxmlparser.cpp in Sources */,
@@ -1579,7 +1603,6 @@
 				EADF31D317A92E4100B55A44 /* ofdArduinoClient.cpp in Sources */,
 				EADF31D417A92E4100B55A44 /* ofdArduinoCommon.cpp in Sources */,
 				EADF31D517A92E4100B55A44 /* ofdArduinoServer.cpp in Sources */,
-				EADF31D617A92E4100B55A44 /* ofdColorSet.cpp in Sources */,
 				EADF31D817A92E4100B55A44 /* ofdLinkGui.cpp in Sources */,
 				EADF31D917A92E4100B55A44 /* ofdLinksGui.cpp in Sources */,
 				EADF31DA17A92E4100B55A44 /* ofdMidiForGui.cpp in Sources */,
@@ -1605,6 +1628,7 @@
 				EADF31F117A92E4100B55A44 /* ofdSpreads_GenSettings.cpp in Sources */,
 				EADF31F217A92E4100B55A44 /* ofdSpreads_InitShapes.cpp in Sources */,
 				EADF31F317A92E4100B55A44 /* ofdSpreads_XMLsettings.cpp in Sources */,
+				EAD541101878BE71001716BE /* ofxColorSet.cpp in Sources */,
 				EADF31F417A92E4100B55A44 /* ofdSpreadSequence.cpp in Sources */,
 				EADF31F517A92E4100B55A44 /* ofdSpreadTube.cpp in Sources */,
 				EADF31F617A92E4100B55A44 /* ofdSpreadTypo.cpp in Sources */,
