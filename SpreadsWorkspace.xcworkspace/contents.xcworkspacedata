@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
-   <FileRef
-      location = "group:../../addons/ofxSyphon/example-Basic/ofxSyphonExample.xcodeproj">
-   </FileRef>
-   <FileRef
-      location = "group:../../addons/ofxFenster/example/ofxFensterExample.xcodeproj">
-   </FileRef>
+   <Group
+      location = "container:"
+      name = "Examples">
+      <FileRef
+         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxParticleWorld/exampleOfxParticleWorld/exampleOfxParticleWorld.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/math/particlesExample/particlesExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxSyphon/example-Basic/ofxSyphonExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxFenster/example/ofxFensterExample.xcodeproj">
+      </FileRef>
+   </Group>
    <FileRef
       location = "container:Spreads_2_0_0/Spreads_2_0_0.xcodeproj">
    </FileRef>
