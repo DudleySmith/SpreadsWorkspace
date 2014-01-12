@@ -14,7 +14,7 @@ void testApp::setup()
     
     // COLORS -------------------------
     // Load colors
-    mOut_vars.mI_ColorSet.loadFromXml("colorSets.xml");
+    mOut_vars.mI_ColorSet.setup("colorSets.xml");
     
     // GUI Interface -----------------------------------------
     m_trace.go("Setup GUI");
