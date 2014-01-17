@@ -8,19 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		0546d1a38e13bd319cc9755b5ca7e1a0 /* OscReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9bf3aa0d4faa89d0f8a0e545403162be /* OscReceivedElements.cpp */; };
-		06980ff65ed01afe2bcaad5e92e994fd /* ofxSimpleGuiConfig.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 434f6d1bd9d80bffafa18b0904eb6fbc /* ofxSimpleGuiConfig.cpp */; };
 		1b5f996886a777589d5dd7949f25ec5e /* svgtiny_list.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 077f7ac989dab289a1ec643f6848bb19 /* svgtiny_list.cpp */; };
 		1d6b78ef041b097ce4f423c499448272 /* svgtiny.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 38bc601ad0a2f4f2319d14602240edcb /* svgtiny.cpp */; };
-		1f910dcf02326b0e25059352edd39c0c /* ofxSimpleGuiPage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = fd30123cd06421602730f58647372e52 /* ofxSimpleGuiPage.cpp */; };
 		28090deb5109115003e8f1c540f04092 /* UdpSocketWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5928aa323f5c2690b06c837d8d036f55 /* UdpSocketWin.cpp */; };
-		2c776d21a9559288b0f7aed9b1be072d /* ofxSimpleGuiMovieSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8445ea9a5fd9905881cbb8a624e1cf51 /* ofxSimpleGuiMovieSlider.cpp */; };
-		2dd56bbc82953d6ae0a018bfad910b7d /* ofxSimpleGuiComboBox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = b8e04ba7dcfb448a2ed1ec25aead7222 /* ofxSimpleGuiComboBox.cpp */; };
-		3317b76ee9202b4c6482d15c4ec6cc7b /* ofxSimpleGuiToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1c56b6200d48da052208be05afd7bde7 /* ofxSimpleGuiToggle.cpp */; };
 		4007418a7e820c30f893250dd9f81667 /* MSAObjCPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6f5ec5d746d1c9a366c9942538588eda /* MSAObjCPointer.cpp */; };
 		4294163b15857489b21767695156d95b /* svgtiny_gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 582921ba98d224ed41833868ac78dd5a /* svgtiny_gradient.cpp */; };
-		49073c5c875b61f6d54cf6ab8584e712 /* ofxSimpleGuiQuadWarp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39b743be64c2fc3fc8c221637b98639e /* ofxSimpleGuiQuadWarp.cpp */; };
-		495e773e470ff7c742646e77652f964d /* ofxSimpleGuiContent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = cd862afb8eff69d2b30a7293a307d7d7 /* ofxSimpleGuiContent.cpp */; };
-		49890708c36fa822fc58a60b78029bb3 /* ofxSimpleGuiFPSCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3c4855735366aec807a7cf36cd8a0f88 /* ofxSimpleGuiFPSCounter.cpp */; };
 		510cafe035e576a4e1502d52c11243bb /* UdpSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = e6def695b88ba5faaceaa93785a12fd9 /* UdpSocket.cpp */; };
 		5864ad82e20f15536d054ea319473de3 /* ofxOscMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = df49d76c45d5db505a234880104e4dc7 /* ofxOscMessage.cpp */; };
 		5a4349e9754d6fa14c0f2a3a1abc30b6 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = fc5da1c87211d4f6377da7199d8c5a1e /* tinyxmlparser.cpp */; };
@@ -31,11 +23,8 @@
 		67fe4c7b15c2f0478c8126c28fa6aad0 /* NetworkingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3b361208cd4107e479f04e7bce6d93aa /* NetworkingUtils.cpp */; };
 		6a565a9714a6a12eb9098f521a79acc1 /* src_colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 27dfa5e4c611c297aadb2002fa7e95bd /* src_colors.cpp */; };
 		72a929d3561b8232a182abfcbb325491 /* ofxOscBundle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 65eefa3da3526e9cdd9c21f90d9b5684 /* ofxOscBundle.cpp */; };
-		76f1472575bcca088fe3454bc580db3c /* ofxSimpleGuiSlider2d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5eaf0a3cb08e81512bb99f6862e34387 /* ofxSimpleGuiSlider2d.cpp */; };
-		7f8d13cd42f89d3284829cf0a5a4cba1 /* ofxSimpleGuiValueControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = f9d0aee8fc68bfd57948548050da23ce /* ofxSimpleGuiValueControl.cpp */; };
 		825fa11382b216421ac896a64401b50d /* MSAFluidDrawerBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = a0e48fd05bda9491dca86aaa03c55ab1 /* MSAFluidDrawerBase.cpp */; };
 		879a251454401bc0b6e4f238fc63135b /* OscTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = d9bffbbf4cc43dee890b3c3e8f7d792c /* OscTypes.cpp */; };
-		8ce60c8f4001811d5b27d0f8f82c8148 /* ofxSimpleGuiControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = a5c54a5752a9362986db5b350961b7de /* ofxSimpleGuiControl.cpp */; };
 		8f5205aef8861ef234f0651aba6be2ee /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81967292bfc87a0144bd32c66f3adb20 /* ofxOscSender.cpp */; };
 		933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */; };
 		9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */; };
@@ -51,7 +40,7 @@
 		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
 		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
-		E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */; };
+		E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */; };
 		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
 		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
 		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
@@ -88,17 +77,11 @@
 		EADF31DF17A92E4100B55A44 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF319517A92E4100B55A44 /* ParticleSystem.cpp */; };
 		EADF31E017A92E4100B55A44 /* ofdOsc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF319817A92E4100B55A44 /* ofdOsc.cpp */; };
 		EADF31E117A92E4100B55A44 /* ofdOscReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF319A17A92E4100B55A44 /* ofdOscReader.cpp */; };
-		EADF31E217A92E4100B55A44 /* ofdEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF319D17A92E4100B55A44 /* ofdEmitter.cpp */; };
-		EADF31E317A92E4100B55A44 /* ofdForce.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF319F17A92E4100B55A44 /* ofdForce.cpp */; };
-		EADF31E417A92E4100B55A44 /* ofdPart.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31A117A92E4100B55A44 /* ofdPart.cpp */; };
-		EADF31E517A92E4100B55A44 /* ofdParticles_Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31A317A92E4100B55A44 /* ofdParticles_Settings.cpp */; };
-		EADF31E617A92E4100B55A44 /* ofdWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31A517A92E4100B55A44 /* ofdWorld.cpp */; };
 		EADF31E717A92E4100B55A44 /* ofdRay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31A817A92E4100B55A44 /* ofdRay.cpp */; };
 		EADF31E817A92E4100B55A44 /* ofdRays.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31AA17A92E4100B55A44 /* ofdRays.cpp */; };
 		EADF31E917A92E4100B55A44 /* ofdPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31AD17A92E4100B55A44 /* ofdPattern.cpp */; };
 		EADF31EB17A92E4100B55A44 /* ofdSpreadElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31B117A92E4100B55A44 /* ofdSpreadElement.cpp */; };
 		EADF31EC17A92E4100B55A44 /* ofdSpreadFullShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31B317A92E4100B55A44 /* ofdSpreadFullShape.cpp */; };
-		EADF31EE17A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31B817A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp */; };
 		EADF31EF17A92E4100B55A44 /* ofdSpreadPatterns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31BA17A92E4100B55A44 /* ofdSpreadPatterns.cpp */; };
 		EADF31F017A92E4100B55A44 /* ofdSpreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31BC17A92E4100B55A44 /* ofdSpreads.cpp */; };
 		EADF31F117A92E4100B55A44 /* ofdSpreads_GenSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31BE17A92E4100B55A44 /* ofdSpreads_GenSettings.cpp */; };
@@ -109,17 +92,27 @@
 		EADF31F617A92E4100B55A44 /* ofdSpreadTypo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31C717A92E4100B55A44 /* ofdSpreadTypo.cpp */; };
 		EADF31F717A92E4100B55A44 /* ofdTimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31CA17A92E4100B55A44 /* ofdTimer.cpp */; };
 		EADF31F817A92E4100B55A44 /* ofdTools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EADF31CE17A92E4100B55A44 /* ofdTools.cpp */; };
+		EAEC92CF18892184002E631B /* ofxColorSetUI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92CD18892184002E631B /* ofxColorSetUI.cpp */; };
+		EAEC92E318893A74002E631B /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92D218893A74002E631B /* ofxBaseGui.cpp */; };
+		EAEC92E418893A74002E631B /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92D418893A74002E631B /* ofxButton.cpp */; };
+		EAEC92E518893A74002E631B /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92D718893A74002E631B /* ofxGuiGroup.cpp */; };
+		EAEC92E618893A74002E631B /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92D918893A74002E631B /* ofxLabel.cpp */; };
+		EAEC92E718893A74002E631B /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92DB18893A74002E631B /* ofxPanel.cpp */; };
+		EAEC92E818893A74002E631B /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92DD18893A74002E631B /* ofxSlider.cpp */; };
+		EAEC92E918893A74002E631B /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92DF18893A74002E631B /* ofxSliderGroup.cpp */; };
+		EAEC92EA18893A74002E631B /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEC92E118893A74002E631B /* ofxToggle.cpp */; };
 		EAEF0AD017AA7E5200ACF68E /* ofdOscPatternMessage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAEF0ACE17AA7E5200ACF68E /* ofdOscPatternMessage.cpp */; };
-		a0b7f6a3ec34b4f84321385da811b467 /* ofxSimpleGuiButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7eb99f95be2d12cc78d7890339c79ead /* ofxSimpleGuiButton.cpp */; };
+		EAF7221F188801F800F27C19 /* ofxAttractor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAF72212188801F800F27C19 /* ofxAttractor.cpp */; };
+		EAF72220188801F800F27C19 /* ofxConstraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAF72214188801F800F27C19 /* ofxConstraint.cpp */; };
+		EAF72221188801F800F27C19 /* ofxEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAF72216188801F800F27C19 /* ofxEmitter.cpp */; };
+		EAF72222188801F800F27C19 /* ofxParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAF72218188801F800F27C19 /* ofxParticle.cpp */; };
+		EAF72223188801F800F27C19 /* ofxParticleWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EAF7221A188801F800F27C19 /* ofxParticleWorld.cpp */; };
 		a29d8c96ae042eceaa1bd4f3cbbf0c9d /* NetworkingUtilsWin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2a5b1fad3f30c8065c396acbb72e5d95 /* NetworkingUtilsWin.cpp */; };
 		a854a26c873cb7cb18844f73fe1c3e60 /* MSACoreGL.cpp in Sources */ = {isa = PBXBuildFile; fileRef = cba1268bc95928a23e34722135932996 /* MSACoreGL.cpp */; };
 		ade367465d2a8ebad4c7a8d92a3ef718 /* IpEndpointName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = add194746185e2da11468377f4e88c2f /* IpEndpointName.cpp */; };
 		b88a57b4b0ba6191ef3571e9227486e8 /* ofxSvg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = b9e16009e1772c6d00b20013d7186a66 /* ofxSvg.cpp */; };
-		c2ed558d391ba9692d3bf70567fb7804 /* ofxSimpleGuiToo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = cd6833700340995a484f6405e32bad9a /* ofxSimpleGuiToo.cpp */; };
 		c4782ecc372420ace0615b749e1d0d6b /* OscPrintReceivedElements.cpp in Sources */ = {isa = PBXBuildFile; fileRef = bc8881b3c8c0a1c45f042e7a9e7b92cc /* OscPrintReceivedElements.cpp */; };
-		cf142a7d9914b99e6e2870527205bee8 /* ofxSimpleGuiTitle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7a7cbac306f060bbc794c4f031710694 /* ofxSimpleGuiTitle.cpp */; };
 		d1395dd979998dcffa40acaccf9ff1f5 /* ofxMSAInteractiveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ce0949c9f18be455d5e6cd1073edc166 /* ofxMSAInteractiveObject.cpp */; };
-		e39bf54c7233c89a5bb421748863e43d /* ofxSimpleGuiColorPicker.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 37be47726868d2acd7e5ce49194a7984 /* ofxSimpleGuiColorPicker.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,12 +152,8 @@
 		01dcc0911400f9acf5b65578af4ec8f9 /* ofxXmlSettings.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxXmlSettings.h; path = ../../../addons/ofxXmlSettings/src/ofxXmlSettings.h; sourceTree = SOURCE_ROOT; };
 		029684cf678f70f6d3537a29773654a6 /* OscOutboundPacketStream.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscOutboundPacketStream.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.h; sourceTree = SOURCE_ROOT; };
 		077f7ac989dab289a1ec643f6848bb19 /* svgtiny_list.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = svgtiny_list.cpp; path = ../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_list.cpp; sourceTree = SOURCE_ROOT; };
-		1256c82208d6390d300e7ceaec29faf4 /* ofxSimpleGuiSlider2d.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiSlider2d.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiSlider2d.h; sourceTree = SOURCE_ROOT; };
-		18e50a181a480d21484f3120b98c4672 /* ofxSimpleGuiSliderBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiSliderBase.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiSliderBase.h; sourceTree = SOURCE_ROOT; };
 		1a209419b42150e68ab6e91d017542a9 /* MSAFluidDrawerBase old.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "MSAFluidDrawerBase old.h"; path = "../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase old.h"; sourceTree = SOURCE_ROOT; };
 		1b7394228935ec892b224435d2835c0e /* MSAPhysicsParticle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsParticle.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsParticle.h; sourceTree = SOURCE_ROOT; };
-		1c56b6200d48da052208be05afd7bde7 /* ofxSimpleGuiToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiToggle.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiToggle.cpp; sourceTree = SOURCE_ROOT; };
-		1dcab31f5077c9c550b1adb37be42a5e /* ofxSimpleGuiFPSCounter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiFPSCounter.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiFPSCounter.h; sourceTree = SOURCE_ROOT; };
 		1f197522bc00ab72c1a74679fda236e0 /* MSAFluidParticleUpdater.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAFluidParticleUpdater.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidParticleUpdater.h; sourceTree = SOURCE_ROOT; };
 		20f35afadaf0068b067e713fa3152568 /* OscReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscReceivedElements.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		23640f57df6c4bb6bfc5da4c2199c7dd /* PacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/PacketListener.h; sourceTree = SOURCE_ROOT; };
@@ -175,49 +164,35 @@
 		2b40eda85beb63e46785bc299a638898 /* tinyxml.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxml.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxml.cpp; sourceTree = SOURCE_ROOT; };
 		2db4418124248d5a847fa18c521f5135 /* MSAPhysicsParticleUpdater.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsParticleUpdater.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsParticleUpdater.h; sourceTree = SOURCE_ROOT; };
 		2fd4b0329909d3527f0034948840df14 /* UdpSocket.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = UdpSocket.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/UdpSocket.h; sourceTree = SOURCE_ROOT; };
-		33067f54b52161835b50408dca636f93 /* ofxSimpleGuiToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiToggle.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiToggle.h; sourceTree = SOURCE_ROOT; };
 		3331c345dc25a00db001e40d350f51fe /* MSAPhysicsDataRecorder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsDataRecorder.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsDataRecorder.h; sourceTree = SOURCE_ROOT; };
 		338f76bedae2b6474dd8a2c9a244f0c1 /* MSAPhysicsParticleDrawer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsParticleDrawer.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsParticleDrawer.h; sourceTree = SOURCE_ROOT; };
 		35aa54a6dfaf95252edcc3f8a774495e /* MSAPhysicsConstraint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsConstraint.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsConstraint.h; sourceTree = SOURCE_ROOT; };
-		37be47726868d2acd7e5ce49194a7984 /* ofxSimpleGuiColorPicker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiColorPicker.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiColorPicker.cpp; sourceTree = SOURCE_ROOT; };
 		38bc601ad0a2f4f2319d14602240edcb /* svgtiny.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = svgtiny.cpp; path = ../../../addons/ofxSvg/libs/svgTiny/src/svgtiny.cpp; sourceTree = SOURCE_ROOT; };
-		39b743be64c2fc3fc8c221637b98639e /* ofxSimpleGuiQuadWarp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiQuadWarp.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiQuadWarp.cpp; sourceTree = SOURCE_ROOT; };
 		3b361208cd4107e479f04e7bce6d93aa /* NetworkingUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = NetworkingUtils.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/posix/NetworkingUtils.cpp; sourceTree = SOURCE_ROOT; };
-		3c4855735366aec807a7cf36cd8a0f88 /* ofxSimpleGuiFPSCounter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiFPSCounter.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiFPSCounter.cpp; sourceTree = SOURCE_ROOT; };
-		3e59c088be3987d34adeba5f4b0a9496 /* ofxSimpleGuiToo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiToo.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToo.h; sourceTree = SOURCE_ROOT; };
-		434f6d1bd9d80bffafa18b0904eb6fbc /* ofxSimpleGuiConfig.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiConfig.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiConfig.cpp; sourceTree = SOURCE_ROOT; };
 		4436d71ce6442e6e1c783a2ed2b34e95 /* MSAPhysics2D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysics2D.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysics2D.h; sourceTree = SOURCE_ROOT; };
 		444657a12e59d0ed86981498fccd5fcc /* TimerListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TimerListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/TimerListener.h; sourceTree = SOURCE_ROOT; };
 		48974f980f51769171d0b2f5e519dd28 /* IpEndpointName.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = IpEndpointName.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.h; sourceTree = SOURCE_ROOT; };
 		4a2c7833e609686e9ecd8a8c7753b7c0 /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxMSAInteractiveObject.h; path = ../../../addons/ofxMSAInteractiveObject/src/ofxMSAInteractiveObject.h; sourceTree = SOURCE_ROOT; };
-		4d7c691c68bf261275355f845e3a0c91 /* ofxSimpleGuiPage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiPage.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiPage.h; sourceTree = SOURCE_ROOT; };
 		4e95fb446a9c9c6f0de12d752f6604b3 /* OscPrintReceivedElements.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscPrintReceivedElements.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.h; sourceTree = SOURCE_ROOT; };
 		50df87d612c5aae17aafa6c02c6bc570 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxXmlSettings.cpp; path = ../../../addons/ofxXmlSettings/src/ofxXmlSettings.cpp; sourceTree = SOURCE_ROOT; };
 		582921ba98d224ed41833868ac78dd5a /* svgtiny_gradient.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = svgtiny_gradient.cpp; path = ../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_gradient.cpp; sourceTree = SOURCE_ROOT; };
 		58b94fff012004b3a4e58f3277ea9811 /* MSAFluid.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAFluid.h; path = ../../../addons/ofxMSAFluid/src/MSAFluid.h; sourceTree = SOURCE_ROOT; };
 		5928aa323f5c2690b06c837d8d036f55 /* UdpSocketWin.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = UdpSocketWin.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/win32/UdpSocketWin.cpp; sourceTree = SOURCE_ROOT; };
 		5daa01df76ea921c7da7405d3734702f /* MSAFluidSolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MSAFluidSolver.cpp; path = ../../../addons/ofxMSAFluid/src/MSAFluidSolver.cpp; sourceTree = SOURCE_ROOT; };
-		5eaf0a3cb08e81512bb99f6862e34387 /* ofxSimpleGuiSlider2d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiSlider2d.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiSlider2d.cpp; sourceTree = SOURCE_ROOT; };
 		5f118c5daaa61d8db376bb3ff4b1f889 /* svgtiny_internal.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = svgtiny_internal.h; path = ../../../addons/ofxSvg/libs/svgTiny/src/svgtiny_internal.h; sourceTree = SOURCE_ROOT; };
 		63a47ac60ffafc3bf093ec0f62a9a4d4 /* OscOutboundPacketStream.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscOutboundPacketStream.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscOutboundPacketStream.cpp; sourceTree = SOURCE_ROOT; };
 		65eefa3da3526e9cdd9c21f90d9b5684 /* ofxOscBundle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscBundle.cpp; path = ../../../addons/ofxOsc/src/ofxOscBundle.cpp; sourceTree = SOURCE_ROOT; };
 		6b65e6930994cc4b2d2b8b33b10f6e99 /* OscPacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscPacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscPacketListener.h; sourceTree = SOURCE_ROOT; };
 		6f5ec5d746d1c9a366c9942538588eda /* MSAObjCPointer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MSAObjCPointer.cpp; path = ../../../addons/ofxMSAObjCPointer/src/MSAObjCPointer.cpp; sourceTree = SOURCE_ROOT; };
-		713d63a8f17bdd3ac3782a70bfd1bdb1 /* ofxSimpleGuiSliderFloat.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiSliderFloat.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiSliderFloat.h; sourceTree = SOURCE_ROOT; };
 		742419098e2a7cc7a7f877ba4f6d8058 /* MSACoreGL.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSACoreGL.h; path = ../../../addons/ofxMSACore/src/MSACoreGL.h; sourceTree = SOURCE_ROOT; };
 		7689f8a0f3d0b7635a8c310487cd0928 /* ofxOscArg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscArg.h; path = ../../../addons/ofxOsc/src/ofxOscArg.h; sourceTree = SOURCE_ROOT; };
 		779dd745a53bdf4b7e8958328b45e447 /* MSACore-Cinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "MSACore-Cinder.h"; path = "../../../addons/ofxMSACore/src/MSACore-Cinder.h"; sourceTree = SOURCE_ROOT; };
-		7a7cbac306f060bbc794c4f031710694 /* ofxSimpleGuiTitle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiTitle.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiTitle.cpp; sourceTree = SOURCE_ROOT; };
-		7eb99f95be2d12cc78d7890339c79ead /* ofxSimpleGuiButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiButton.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiButton.cpp; sourceTree = SOURCE_ROOT; };
-		7fc468c65dfb96196f7368c4bfad5e1c /* ofxSimpleGuiSliderInt.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiSliderInt.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiSliderInt.h; sourceTree = SOURCE_ROOT; };
 		81967292bfc87a0144bd32c66f3adb20 /* ofxOscSender.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscSender.cpp; path = ../../../addons/ofxOsc/src/ofxOscSender.cpp; sourceTree = SOURCE_ROOT; };
 		832bdc407620cdba568b713d2252c43c /* tinyxmlerror.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxmlerror.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxmlerror.cpp; sourceTree = SOURCE_ROOT; };
-		8445ea9a5fd9905881cbb8a624e1cf51 /* ofxSimpleGuiMovieSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiMovieSlider.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiMovieSlider.cpp; sourceTree = SOURCE_ROOT; };
 		8af5cde1b5f658d7de6849d51b7f7bff /* svgtiny.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = svgtiny.h; path = ../../../addons/ofxSvg/libs/svgTiny/src/svgtiny.h; sourceTree = SOURCE_ROOT; };
 		8b30e93fd3d3475eed522a0e0b085e30 /* ofxOscBundle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscBundle.h; path = ../../../addons/ofxOsc/src/ofxOscBundle.h; sourceTree = SOURCE_ROOT; };
 		8c75afc8774a62495dd5346429f6f666 /* ofxOscReceiver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscReceiver.h; path = ../../../addons/ofxOsc/src/ofxOscReceiver.h; sourceTree = SOURCE_ROOT; };
 		91b9946ad61cb2d7d94477d6d684bbfb /* MSAPhysicsParams.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsParams.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsParams.h; sourceTree = SOURCE_ROOT; };
-		96639232e13926f4d450bb83d34564c0 /* ofxSimpleGuiQuadWarp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiQuadWarp.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiQuadWarp.h; sourceTree = SOURCE_ROOT; };
 		9bf3aa0d4faa89d0f8a0e545403162be /* OscReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscReceivedElements.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
 		9f7986dc4eb05e75fce2c777500fdc01 /* ofxOscSender.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscSender.h; path = ../../../addons/ofxOsc/src/ofxOscSender.h; sourceTree = SOURCE_ROOT; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
@@ -233,8 +208,8 @@
 		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
 		E4B69B5B0A3A1756003C02F2 /* Spreads_2_0_0Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spreads_2_0_0Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1F0A3A1BDC003C02F2 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 2; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; lineEnding = 2; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
@@ -244,7 +219,7 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
-		EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadDisplay.cpp; sourceTree = "<group>"; };
+		EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadDisplay.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA9A7D8A17ABBEAE00E89067 /* ofdSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadDisplay.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAD53FBA1877156E001716BE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EAD53FD91877156E001716BE /* Syphon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Syphon.framework; sourceTree = "<group>"; };
@@ -336,10 +311,10 @@
 		EAD541041878BE71001716BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EAD541061878BE71001716BE /* ofxBasicColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBasicColorSet.cpp; sourceTree = "<group>"; };
 		EAD541071878BE71001716BE /* ofxBasicColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBasicColorSet.h; sourceTree = "<group>"; };
-		EAD541081878BE71001716BE /* ofxColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxColorSet.cpp; sourceTree = "<group>"; };
+		EAD541081878BE71001716BE /* ofxColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxColorSet.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EAD541091878BE71001716BE /* ofxColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSet.h; sourceTree = "<group>"; };
-		EAD5410A1878BE71001716BE /* ofxColorSetAnimated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSetAnimated.cpp; sourceTree = "<group>"; };
-		EAD5410B1878BE71001716BE /* ofxColorSetAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofxColorSetAnimated.h; sourceTree = "<group>"; };
+		EAD5410A1878BE71001716BE /* ofxColorSetAnimated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxColorSetAnimated.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EAD5410B1878BE71001716BE /* ofxColorSetAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofxColorSetAnimated.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF317317A92E4100B55A44 /* ofdAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdAnimation.cpp; sourceTree = "<group>"; };
 		EADF317417A92E4100B55A44 /* ofdAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdAnimation.h; sourceTree = "<group>"; };
 		EADF317617A92E4100B55A44 /* ofdArduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdArduino.h; sourceTree = "<group>"; };
@@ -367,101 +342,106 @@
 		EADF319917A92E4100B55A44 /* ofdOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdOsc.h; sourceTree = "<group>"; };
 		EADF319A17A92E4100B55A44 /* ofdOscReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdOscReader.cpp; sourceTree = "<group>"; };
 		EADF319B17A92E4100B55A44 /* ofdOscReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdOscReader.h; sourceTree = "<group>"; };
-		EADF319D17A92E4100B55A44 /* ofdEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdEmitter.cpp; sourceTree = "<group>"; };
-		EADF319E17A92E4100B55A44 /* ofdEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdEmitter.h; sourceTree = "<group>"; };
-		EADF319F17A92E4100B55A44 /* ofdForce.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdForce.cpp; sourceTree = "<group>"; };
-		EADF31A017A92E4100B55A44 /* ofdForce.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdForce.h; sourceTree = "<group>"; };
-		EADF31A117A92E4100B55A44 /* ofdPart.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdPart.cpp; sourceTree = "<group>"; };
-		EADF31A217A92E4100B55A44 /* ofdPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdPart.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EADF31A317A92E4100B55A44 /* ofdParticles_Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdParticles_Settings.cpp; sourceTree = "<group>"; };
-		EADF31A417A92E4100B55A44 /* ofdParticles_Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdParticles_Settings.h; sourceTree = "<group>"; };
-		EADF31A517A92E4100B55A44 /* ofdWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdWorld.cpp; sourceTree = "<group>"; };
-		EADF31A617A92E4100B55A44 /* ofdWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdWorld.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31A817A92E4100B55A44 /* ofdRay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdRay.cpp; sourceTree = "<group>"; };
 		EADF31A917A92E4100B55A44 /* ofdRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdRay.h; sourceTree = "<group>"; };
 		EADF31AA17A92E4100B55A44 /* ofdRays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdRays.cpp; sourceTree = "<group>"; };
 		EADF31AB17A92E4100B55A44 /* ofdRays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdRays.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31AD17A92E4100B55A44 /* ofdPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdPattern.cpp; sourceTree = "<group>"; };
 		EADF31AE17A92E4100B55A44 /* ofdPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdPattern.h; sourceTree = "<group>"; };
-		EADF31B117A92E4100B55A44 /* ofdSpreadElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadElement.cpp; sourceTree = "<group>"; };
-		EADF31B217A92E4100B55A44 /* ofdSpreadElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadElement.h; sourceTree = "<group>"; };
-		EADF31B317A92E4100B55A44 /* ofdSpreadFullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadFullShape.cpp; sourceTree = "<group>"; };
-		EADF31B417A92E4100B55A44 /* ofdSpreadFullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadFullShape.h; sourceTree = "<group>"; };
+		EADF31B117A92E4100B55A44 /* ofdSpreadElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadElement.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31B217A92E4100B55A44 /* ofdSpreadElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadElement.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EADF31B317A92E4100B55A44 /* ofdSpreadFullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadFullShape.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31B417A92E4100B55A44 /* ofdSpreadFullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadFullShape.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31B517A92E4100B55A44 /* ofdSpreadGuiToApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadGuiToApp.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EADF31B817A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadGuiWindowWithOsc.cpp; sourceTree = "<group>"; };
-		EADF31B917A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadGuiWindowWithOsc.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		EADF31BA17A92E4100B55A44 /* ofdSpreadPatterns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadPatterns.cpp; sourceTree = "<group>"; };
-		EADF31BB17A92E4100B55A44 /* ofdSpreadPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadPatterns.h; sourceTree = "<group>"; };
-		EADF31BC17A92E4100B55A44 /* ofdSpreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads.cpp; sourceTree = "<group>"; };
+		EADF31BA17A92E4100B55A44 /* ofdSpreadPatterns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadPatterns.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31BB17A92E4100B55A44 /* ofdSpreadPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadPatterns.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EADF31BC17A92E4100B55A44 /* ofdSpreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreads.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EADF31BD17A92E4100B55A44 /* ofdSpreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreads.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31BE17A92E4100B55A44 /* ofdSpreads_GenSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads_GenSettings.cpp; sourceTree = "<group>"; };
 		EADF31BF17A92E4100B55A44 /* ofdSpreads_GenSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreads_GenSettings.h; sourceTree = "<group>"; };
-		EADF31C017A92E4100B55A44 /* ofdSpreads_InitShapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads_InitShapes.cpp; sourceTree = "<group>"; };
-		EADF31C117A92E4100B55A44 /* ofdSpreads_XMLsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreads_XMLsettings.cpp; sourceTree = "<group>"; };
-		EADF31C217A92E4100B55A44 /* ofdSpreads_XMLsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreads_XMLsettings.h; sourceTree = "<group>"; };
+		EADF31C017A92E4100B55A44 /* ofdSpreads_InitShapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreads_InitShapes.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31C117A92E4100B55A44 /* ofdSpreads_XMLsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreads_XMLsettings.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31C217A92E4100B55A44 /* ofdSpreads_XMLsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreads_XMLsettings.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31C317A92E4100B55A44 /* ofdSpreadSequence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadSequence.cpp; sourceTree = "<group>"; };
 		EADF31C417A92E4100B55A44 /* ofdSpreadSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadSequence.h; sourceTree = "<group>"; };
 		EADF31C517A92E4100B55A44 /* ofdSpreadTube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadTube.cpp; sourceTree = "<group>"; };
-		EADF31C617A92E4100B55A44 /* ofdSpreadTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadTube.h; sourceTree = "<group>"; };
-		EADF31C717A92E4100B55A44 /* ofdSpreadTypo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdSpreadTypo.cpp; sourceTree = "<group>"; };
-		EADF31C817A92E4100B55A44 /* ofdSpreadTypo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdSpreadTypo.h; sourceTree = "<group>"; };
+		EADF31C617A92E4100B55A44 /* ofdSpreadTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadTube.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		EADF31C717A92E4100B55A44 /* ofdSpreadTypo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadTypo.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		EADF31C817A92E4100B55A44 /* ofdSpreadTypo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadTypo.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EADF31CA17A92E4100B55A44 /* ofdTimer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdTimer.cpp; sourceTree = "<group>"; };
 		EADF31CB17A92E4100B55A44 /* ofdTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdTimer.h; sourceTree = "<group>"; };
 		EADF31CE17A92E4100B55A44 /* ofdTools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdTools.cpp; sourceTree = "<group>"; };
 		EADF31CF17A92E4100B55A44 /* ofdTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdTools.h; sourceTree = "<group>"; };
 		EADF31D117A92E4100B55A44 /* ofdTrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdTrace.h; sourceTree = "<group>"; };
+		EAEC92CD18892184002E631B /* ofxColorSetUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSetUI.cpp; sourceTree = "<group>"; };
+		EAEC92CE18892184002E631B /* ofxColorSetUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSetUI.h; sourceTree = "<group>"; };
+		EAEC92D218893A74002E631B /* ofxBaseGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBaseGui.cpp; sourceTree = "<group>"; };
+		EAEC92D318893A74002E631B /* ofxBaseGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBaseGui.h; sourceTree = "<group>"; };
+		EAEC92D418893A74002E631B /* ofxButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
+		EAEC92D518893A74002E631B /* ofxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
+		EAEC92D618893A74002E631B /* ofxGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
+		EAEC92D718893A74002E631B /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		EAEC92D818893A74002E631B /* ofxGuiGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
+		EAEC92D918893A74002E631B /* ofxLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
+		EAEC92DA18893A74002E631B /* ofxLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
+		EAEC92DB18893A74002E631B /* ofxPanel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPanel.cpp; sourceTree = "<group>"; };
+		EAEC92DC18893A74002E631B /* ofxPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPanel.h; sourceTree = "<group>"; };
+		EAEC92DD18893A74002E631B /* ofxSlider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSlider.cpp; sourceTree = "<group>"; };
+		EAEC92DE18893A74002E631B /* ofxSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSlider.h; sourceTree = "<group>"; };
+		EAEC92DF18893A74002E631B /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSliderGroup.cpp; sourceTree = "<group>"; };
+		EAEC92E018893A74002E631B /* ofxSliderGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSliderGroup.h; sourceTree = "<group>"; };
+		EAEC92E118893A74002E631B /* ofxToggle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxToggle.cpp; sourceTree = "<group>"; };
+		EAEC92E218893A74002E631B /* ofxToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxToggle.h; sourceTree = "<group>"; };
 		EAEF0ACE17AA7E5200ACF68E /* ofdOscPatternMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdOscPatternMessage.cpp; sourceTree = "<group>"; };
 		EAEF0ACF17AA7E5200ACF68E /* ofdOscPatternMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdOscPatternMessage.h; sourceTree = "<group>"; };
 		EAEF248817AEA745002CE877 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; name = data; path = bin/data; sourceTree = "<group>"; };
+		EAF721FB188801F800F27C19 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EAF7220F188801F800F27C19 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EAF72210188801F800F27C19 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		EAF72212188801F800F27C19 /* ofxAttractor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxAttractor.cpp; sourceTree = "<group>"; };
+		EAF72213188801F800F27C19 /* ofxAttractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxAttractor.h; sourceTree = "<group>"; };
+		EAF72214188801F800F27C19 /* ofxConstraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxConstraint.cpp; sourceTree = "<group>"; };
+		EAF72215188801F800F27C19 /* ofxConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxConstraint.h; sourceTree = "<group>"; };
+		EAF72216188801F800F27C19 /* ofxEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEmitter.cpp; sourceTree = "<group>"; };
+		EAF72217188801F800F27C19 /* ofxEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEmitter.h; sourceTree = "<group>"; };
+		EAF72218188801F800F27C19 /* ofxParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle.cpp; sourceTree = "<group>"; };
+		EAF72219188801F800F27C19 /* ofxParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle.h; sourceTree = "<group>"; };
+		EAF7221A188801F800F27C19 /* ofxParticleWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticleWorld.cpp; sourceTree = "<group>"; };
+		EAF7221B188801F800F27C19 /* ofxParticleWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticleWorld.h; sourceTree = "<group>"; };
+		EAF722271888035800F27C19 /* ofxParticleWorldDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticleWorldDefine.h; sourceTree = "<group>"; };
 		a03b32b28652d6533c3a1c790d189fbf /* MSAFluidDrawerBase.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; lineEnding = 0; name = MSAFluidDrawerBase.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.h; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		a0e48fd05bda9491dca86aaa03c55ab1 /* MSAFluidDrawerBase.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MSAFluidDrawerBase.cpp; path = ../../../addons/ofxMSAFluid/src/MSAFluidDrawerBase.cpp; sourceTree = SOURCE_ROOT; };
 		a2aaa8ca403479e6fcdf920ebcd1682b /* OscHostEndianness.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscHostEndianness.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscHostEndianness.h; sourceTree = SOURCE_ROOT; };
-		a5c54a5752a9362986db5b350961b7de /* ofxSimpleGuiControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiControl.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiControl.cpp; sourceTree = SOURCE_ROOT; };
 		add194746185e2da11468377f4e88c2f /* IpEndpointName.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = IpEndpointName.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/IpEndpointName.cpp; sourceTree = SOURCE_ROOT; };
 		ae335eb4709bfd4671eeac8460534507 /* MessageMappingOscPacketListener.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MessageMappingOscPacketListener.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/MessageMappingOscPacketListener.h; sourceTree = SOURCE_ROOT; };
-		af2311980a9c84efaff7c63b196663fe /* ofxSimpleGuiColorPicker.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiColorPicker.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiColorPicker.h; sourceTree = SOURCE_ROOT; };
 		b21e7e5f548eea92f368040bb1aa2f69 /* tinyxml.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = tinyxml.h; path = ../../../addons/ofxXmlSettings/libs/tinyxml.h; sourceTree = SOURCE_ROOT; };
 		b6a449d2ef649012f712e2a151628d77 /* MSAPhysics.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysics.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysics.h; sourceTree = SOURCE_ROOT; };
-		b8e04ba7dcfb448a2ed1ec25aead7222 /* ofxSimpleGuiComboBox.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiComboBox.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiComboBox.cpp; sourceTree = SOURCE_ROOT; };
-		b97264ad9e6a64dda626be735fd06ad3 /* ofxSimpleGuiContent.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiContent.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiContent.h; sourceTree = SOURCE_ROOT; };
 		b9d38288da32dd412a477f7c501809f7 /* MSAPhysicsAttraction.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsAttraction.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsAttraction.h; sourceTree = SOURCE_ROOT; };
 		b9e16009e1772c6d00b20013d7186a66 /* ofxSvg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSvg.cpp; path = ../../../addons/ofxSvg/src/ofxSvg.cpp; sourceTree = SOURCE_ROOT; };
 		bc8881b3c8c0a1c45f042e7a9e7b92cc /* OscPrintReceivedElements.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscPrintReceivedElements.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscPrintReceivedElements.cpp; sourceTree = SOURCE_ROOT; };
 		bf409a6581828b276295569e8e67c452 /* MSACoreMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSACoreMath.h; path = ../../../addons/ofxMSACore/src/MSACoreMath.h; sourceTree = SOURCE_ROOT; };
-		c2e7b57f16a4543d3b10dfa094e86148 /* ofxSimpleGuiValueControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiValueControl.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiValueControl.h; sourceTree = SOURCE_ROOT; };
 		c2fac65c491d4231379f3298ec59c6e9 /* ofxOscReceiver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscReceiver.cpp; path = ../../../addons/ofxOsc/src/ofxOscReceiver.cpp; sourceTree = SOURCE_ROOT; };
 		c38bbf8f08ac5f3ffa91e78bf20ae2cd /* MSAFluidDrawerGl-OF.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "MSAFluidDrawerGl-OF.h"; path = "../../../addons/ofxMSAFluid/src/MSAFluidDrawerGl-OF.h"; sourceTree = SOURCE_ROOT; };
 		c58862c6d212c8e8a83810f4246811b1 /* ofxOscMessage.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxOscMessage.h; path = ../../../addons/ofxOsc/src/ofxOscMessage.h; sourceTree = SOURCE_ROOT; };
 		c6937888e126badc8777423bd27cc7c8 /* OscTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscTypes.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.h; sourceTree = SOURCE_ROOT; };
-		cb7efc52119313b196e5e70a4b43ee1b /* ofxSimpleGuiMovieSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiMovieSlider.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiMovieSlider.h; sourceTree = SOURCE_ROOT; };
 		cba1268bc95928a23e34722135932996 /* MSACoreGL.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MSACoreGL.cpp; path = ../../../addons/ofxMSACore/src/MSACoreGL.cpp; sourceTree = SOURCE_ROOT; };
-		cd6833700340995a484f6405e32bad9a /* ofxSimpleGuiToo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiToo.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiToo.cpp; sourceTree = SOURCE_ROOT; };
-		cd862afb8eff69d2b30a7293a307d7d7 /* ofxSimpleGuiContent.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiContent.cpp; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiContent.cpp; sourceTree = SOURCE_ROOT; };
 		ce0949c9f18be455d5e6cd1073edc166 /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxMSAInteractiveObject.cpp; path = ../../../addons/ofxMSAInteractiveObject/src/ofxMSAInteractiveObject.cpp; sourceTree = SOURCE_ROOT; };
-		cf7d7bb5afc550a463ce3e5ebc7731c9 /* ofxSimpleGuiConfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiConfig.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiConfig.h; sourceTree = SOURCE_ROOT; };
 		d0b839a50a622a8fb095a0d4bcc99988 /* MSAPhysicsWorld.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsWorld.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsWorld.h; sourceTree = SOURCE_ROOT; };
-		d4e33ec0296ea102eb0acd5a739db151 /* ofxSimpleGuiControl.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiControl.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiControl.h; sourceTree = SOURCE_ROOT; };
 		d9bffbbf4cc43dee890b3c3e8f7d792c /* OscTypes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = OscTypes.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscTypes.cpp; sourceTree = SOURCE_ROOT; };
 		ddc4b8e536952a629f6c5206c360548d /* MSAFluidDrawerGl-Cinder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = "MSAFluidDrawerGl-Cinder.h"; path = "../../../addons/ofxMSAFluid/src/MSAFluidDrawerGl-Cinder.h"; sourceTree = SOURCE_ROOT; };
 		df49d76c45d5db505a234880104e4dc7 /* ofxOscMessage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxOscMessage.cpp; path = ../../../addons/ofxOsc/src/ofxOscMessage.cpp; sourceTree = SOURCE_ROOT; };
-		e59a73137a942298246969c7507ff70e /* ofxSimpleGuiComboBox.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiComboBox.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiComboBox.h; sourceTree = SOURCE_ROOT; };
 		e6def695b88ba5faaceaa93785a12fd9 /* UdpSocket.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = UdpSocket.cpp; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/posix/UdpSocket.cpp; sourceTree = SOURCE_ROOT; };
 		e91f55dedd14b7f4baced9b4d83aceb8 /* ofxSvg.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSvg.h; path = ../../../addons/ofxSvg/src/ofxSvg.h; sourceTree = SOURCE_ROOT; };
-		e99f9e2051f21d258f7f1f0012d4fb91 /* ofxSimpleGuiIncludes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiIncludes.h; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiIncludes.h; sourceTree = SOURCE_ROOT; };
 		ef872612718328680a4b9d640d606d8e /* MSACoreCommon.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSACoreCommon.h; path = ../../../addons/ofxMSACore/src/MSACoreCommon.h; sourceTree = SOURCE_ROOT; };
-		f00f43571a0306a6b30bccb2a9cd9cbc /* ofxSimpleGuiButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiButton.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiButton.h; sourceTree = SOURCE_ROOT; };
 		f0c464c57271db63009cbec2539eeabb /* MSAObjCPointer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAObjCPointer.h; path = ../../../addons/ofxMSAObjCPointer/src/MSAObjCPointer.h; sourceTree = SOURCE_ROOT; };
 		f0f5848741dbb0c8cca7e1c0c9c8b803 /* MSAPhysics3D.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysics3D.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysics3D.h; sourceTree = SOURCE_ROOT; };
 		f1ae3cd94973ef5b13267ca637657a8c /* MSAFluidSolver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAFluidSolver.h; path = ../../../addons/ofxMSAFluid/src/MSAFluidSolver.h; sourceTree = SOURCE_ROOT; };
-		f24fe4c2602f5d007203305c30b686a2 /* ofxSimpleGuiTitle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSimpleGuiTitle.h; path = ../../../addons/ofxSimpleGuiToo/src/Controls/ofxSimpleGuiTitle.h; sourceTree = SOURCE_ROOT; };
 		f4f5b6b8ba2bd52c646ed9087d6ed9cf /* OscException.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = OscException.h; path = ../../../addons/ofxOsc/libs/oscpack/src/osc/OscException.h; sourceTree = SOURCE_ROOT; };
 		f7fbc56859535e597b24bb914dbc8313 /* NetworkingUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NetworkingUtils.h; path = ../../../addons/ofxOsc/libs/oscpack/src/ip/NetworkingUtils.h; sourceTree = SOURCE_ROOT; };
 		f89cfa9bbd18e54ce8f75dfeee055a57 /* MSACore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSACore.h; path = ../../../addons/ofxMSACore/src/MSACore.h; sourceTree = SOURCE_ROOT; };
-		f9d0aee8fc68bfd57948548050da23ce /* ofxSimpleGuiValueControl.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiValueControl.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiValueControl.cpp; sourceTree = SOURCE_ROOT; };
 		fb3707b9355d565e27b22c7b7a5e8c4c /* MSATimer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSATimer.h; path = ../../../addons/ofxMSATimer/src/MSATimer.h; sourceTree = SOURCE_ROOT; };
 		fb79f4f97b7801ff51f4373307848b3b /* MSAPhysicsSector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MSAPhysicsSector.h; path = ../../../addons/ofxMSAPhysics/src/MSAPhysicsSector.h; sourceTree = SOURCE_ROOT; };
 		fc5da1c87211d4f6377da7199d8c5a1e /* tinyxmlparser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = tinyxmlparser.cpp; path = ../../../addons/ofxXmlSettings/libs/tinyxmlparser.cpp; sourceTree = SOURCE_ROOT; };
-		fd30123cd06421602730f58647372e52 /* ofxSimpleGuiPage.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSimpleGuiPage.cpp; path = ../../../addons/ofxSimpleGuiToo/src/ofxSimpleGuiPage.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,25 +512,6 @@
 			name = src;
 			sourceTree = "<group>";
 		};
-		262847ac80ba7f38f6230b84144dac0d /* src */ = {
-			isa = PBXGroup;
-			children = (
-				3ffcd8cde089ea259d68f78cef41a435 /* Controls */,
-				434f6d1bd9d80bffafa18b0904eb6fbc /* ofxSimpleGuiConfig.cpp */,
-				cf7d7bb5afc550a463ce3e5ebc7731c9 /* ofxSimpleGuiConfig.h */,
-				a5c54a5752a9362986db5b350961b7de /* ofxSimpleGuiControl.cpp */,
-				d4e33ec0296ea102eb0acd5a739db151 /* ofxSimpleGuiControl.h */,
-				e99f9e2051f21d258f7f1f0012d4fb91 /* ofxSimpleGuiIncludes.h */,
-				fd30123cd06421602730f58647372e52 /* ofxSimpleGuiPage.cpp */,
-				4d7c691c68bf261275355f845e3a0c91 /* ofxSimpleGuiPage.h */,
-				cd6833700340995a484f6405e32bad9a /* ofxSimpleGuiToo.cpp */,
-				3e59c088be3987d34adeba5f4b0a9496 /* ofxSimpleGuiToo.h */,
-				f9d0aee8fc68bfd57948548050da23ce /* ofxSimpleGuiValueControl.cpp */,
-				c2e7b57f16a4543d3b10dfa094e86148 /* ofxSimpleGuiValueControl.h */,
-			);
-			name = src;
-			sourceTree = "<group>";
-		};
 		30cb364908817057b430d52805394cbc /* osc */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,36 +567,6 @@
 				bf409a6581828b276295569e8e67c452 /* MSACoreMath.h */,
 			);
 			name = src;
-			sourceTree = "<group>";
-		};
-		3ffcd8cde089ea259d68f78cef41a435 /* Controls */ = {
-			isa = PBXGroup;
-			children = (
-				7eb99f95be2d12cc78d7890339c79ead /* ofxSimpleGuiButton.cpp */,
-				f00f43571a0306a6b30bccb2a9cd9cbc /* ofxSimpleGuiButton.h */,
-				37be47726868d2acd7e5ce49194a7984 /* ofxSimpleGuiColorPicker.cpp */,
-				af2311980a9c84efaff7c63b196663fe /* ofxSimpleGuiColorPicker.h */,
-				b8e04ba7dcfb448a2ed1ec25aead7222 /* ofxSimpleGuiComboBox.cpp */,
-				e59a73137a942298246969c7507ff70e /* ofxSimpleGuiComboBox.h */,
-				cd862afb8eff69d2b30a7293a307d7d7 /* ofxSimpleGuiContent.cpp */,
-				b97264ad9e6a64dda626be735fd06ad3 /* ofxSimpleGuiContent.h */,
-				3c4855735366aec807a7cf36cd8a0f88 /* ofxSimpleGuiFPSCounter.cpp */,
-				1dcab31f5077c9c550b1adb37be42a5e /* ofxSimpleGuiFPSCounter.h */,
-				8445ea9a5fd9905881cbb8a624e1cf51 /* ofxSimpleGuiMovieSlider.cpp */,
-				cb7efc52119313b196e5e70a4b43ee1b /* ofxSimpleGuiMovieSlider.h */,
-				39b743be64c2fc3fc8c221637b98639e /* ofxSimpleGuiQuadWarp.cpp */,
-				96639232e13926f4d450bb83d34564c0 /* ofxSimpleGuiQuadWarp.h */,
-				5eaf0a3cb08e81512bb99f6862e34387 /* ofxSimpleGuiSlider2d.cpp */,
-				1256c82208d6390d300e7ceaec29faf4 /* ofxSimpleGuiSlider2d.h */,
-				18e50a181a480d21484f3120b98c4672 /* ofxSimpleGuiSliderBase.h */,
-				713d63a8f17bdd3ac3782a70bfd1bdb1 /* ofxSimpleGuiSliderFloat.h */,
-				7fc468c65dfb96196f7368c4bfad5e1c /* ofxSimpleGuiSliderInt.h */,
-				7a7cbac306f060bbc794c4f031710694 /* ofxSimpleGuiTitle.cpp */,
-				f24fe4c2602f5d007203305c30b686a2 /* ofxSimpleGuiTitle.h */,
-				1c56b6200d48da052208be05afd7bde7 /* ofxSimpleGuiToggle.cpp */,
-				33067f54b52161835b50408dca636f93 /* ofxSimpleGuiToggle.h */,
-			);
-			name = Controls;
 			sourceTree = "<group>";
 		};
 		4285052c1a445b625f6991c36c54e441 /* src */ = {
@@ -732,13 +663,14 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EAEC92D018893A74002E631B /* ofxGui */,
+				EAF721FA188801F800F27C19 /* ofxParticleWorld */,
 				EADF317217A92E4100B55A44 /* ofdAnimation */,
 				EADF317517A92E4100B55A44 /* ofdArduino */,
 				EADF318117A92E4100B55A44 /* ofdLinksGui */,
 				EADF318717A92E4100B55A44 /* ofdMidiForGui */,
 				EADF319017A92E4100B55A44 /* ofdMSADemo */,
 				EADF319717A92E4100B55A44 /* ofdOsc */,
-				EADF319C17A92E4100B55A44 /* ofdParticules */,
 				EADF31A717A92E4100B55A44 /* ofdRays */,
 				EADF31AC17A92E4100B55A44 /* ofdSpreads */,
 				EADF31C917A92E4100B55A44 /* ofdTimer */,
@@ -754,7 +686,6 @@
 				bbb46ed124baff9f2ead94849d6d41eb /* ofxMSAPhysics */,
 				5d5c0ae687ac481a1ca3e1c200964ccc /* ofxMSATimer */,
 				e6053ab7fec63d5f83825b880ce53c41 /* ofxOsc */,
-				cfdd139fa301cd9d0914d00f9e1d4fdc /* ofxSimpleGuiToo */,
 				f5f1f1ef8441e64fd46f07c86bfc7ba6 /* ofxSvg */,
 				EAD5407A1878AF5C001716BE /* ofxSyphon */,
 				EAD53FB91877156E001716BE /* ofxSyphon */,
@@ -828,8 +759,8 @@
 			isa = PBXGroup;
 			children = (
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
-				E4B69E1E0A3A1BDC003C02F2 /* testApp.cpp */,
-				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
+				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
+				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -1143,6 +1074,8 @@
 		EAD541051878BE71001716BE /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EAEC92CD18892184002E631B /* ofxColorSetUI.cpp */,
+				EAEC92CE18892184002E631B /* ofxColorSetUI.h */,
 				EAD541061878BE71001716BE /* ofxBasicColorSet.cpp */,
 				EAD541071878BE71001716BE /* ofxBasicColorSet.h */,
 				EAD541081878BE71001716BE /* ofxColorSet.cpp */,
@@ -1230,24 +1163,6 @@
 			path = ../../../addons/ofdOsc;
 			sourceTree = "<group>";
 		};
-		EADF319C17A92E4100B55A44 /* ofdParticules */ = {
-			isa = PBXGroup;
-			children = (
-				EADF319D17A92E4100B55A44 /* ofdEmitter.cpp */,
-				EADF319E17A92E4100B55A44 /* ofdEmitter.h */,
-				EADF319F17A92E4100B55A44 /* ofdForce.cpp */,
-				EADF31A017A92E4100B55A44 /* ofdForce.h */,
-				EADF31A117A92E4100B55A44 /* ofdPart.cpp */,
-				EADF31A217A92E4100B55A44 /* ofdPart.h */,
-				EADF31A317A92E4100B55A44 /* ofdParticles_Settings.cpp */,
-				EADF31A417A92E4100B55A44 /* ofdParticles_Settings.h */,
-				EADF31A517A92E4100B55A44 /* ofdWorld.cpp */,
-				EADF31A617A92E4100B55A44 /* ofdWorld.h */,
-			);
-			name = ofdParticules;
-			path = ../../../addons/ofdParticules;
-			sourceTree = "<group>";
-		};
 		EADF31A717A92E4100B55A44 /* ofdRays */ = {
 			isa = PBXGroup;
 			children = (
@@ -1272,8 +1187,6 @@
 				EADF31B317A92E4100B55A44 /* ofdSpreadFullShape.cpp */,
 				EADF31B417A92E4100B55A44 /* ofdSpreadFullShape.h */,
 				EADF31B517A92E4100B55A44 /* ofdSpreadGuiToApp.h */,
-				EADF31B817A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp */,
-				EADF31B917A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.h */,
 				EADF31BA17A92E4100B55A44 /* ofdSpreadPatterns.cpp */,
 				EADF31BB17A92E4100B55A44 /* ofdSpreadPatterns.h */,
 				EADF31BC17A92E4100B55A44 /* ofdSpreads.cpp */,
@@ -1331,6 +1244,69 @@
 			path = ../../../addons/ofdTrace;
 			sourceTree = "<group>";
 		};
+		EAEC92D018893A74002E631B /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				EAEC92D118893A74002E631B /* src */,
+			);
+			name = ofxGui;
+			path = ../../../addons/ofxGui;
+			sourceTree = "<group>";
+		};
+		EAEC92D118893A74002E631B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EAEC92D218893A74002E631B /* ofxBaseGui.cpp */,
+				EAEC92D318893A74002E631B /* ofxBaseGui.h */,
+				EAEC92D418893A74002E631B /* ofxButton.cpp */,
+				EAEC92D518893A74002E631B /* ofxButton.h */,
+				EAEC92D618893A74002E631B /* ofxGui.h */,
+				EAEC92D718893A74002E631B /* ofxGuiGroup.cpp */,
+				EAEC92D818893A74002E631B /* ofxGuiGroup.h */,
+				EAEC92D918893A74002E631B /* ofxLabel.cpp */,
+				EAEC92DA18893A74002E631B /* ofxLabel.h */,
+				EAEC92DB18893A74002E631B /* ofxPanel.cpp */,
+				EAEC92DC18893A74002E631B /* ofxPanel.h */,
+				EAEC92DD18893A74002E631B /* ofxSlider.cpp */,
+				EAEC92DE18893A74002E631B /* ofxSlider.h */,
+				EAEC92DF18893A74002E631B /* ofxSliderGroup.cpp */,
+				EAEC92E018893A74002E631B /* ofxSliderGroup.h */,
+				EAEC92E118893A74002E631B /* ofxToggle.cpp */,
+				EAEC92E218893A74002E631B /* ofxToggle.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EAF721FA188801F800F27C19 /* ofxParticleWorld */ = {
+			isa = PBXGroup;
+			children = (
+				EAF721FB188801F800F27C19 /* .gitignore */,
+				EAF7220F188801F800F27C19 /* LICENSE */,
+				EAF72210188801F800F27C19 /* README.md */,
+				EAF72211188801F800F27C19 /* src */,
+			);
+			name = ofxParticleWorld;
+			path = ../../../addons/ofxParticleWorld;
+			sourceTree = "<group>";
+		};
+		EAF72211188801F800F27C19 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EAF722271888035800F27C19 /* ofxParticleWorldDefine.h */,
+				EAF72212188801F800F27C19 /* ofxAttractor.cpp */,
+				EAF72213188801F800F27C19 /* ofxAttractor.h */,
+				EAF72214188801F800F27C19 /* ofxConstraint.cpp */,
+				EAF72215188801F800F27C19 /* ofxConstraint.h */,
+				EAF72216188801F800F27C19 /* ofxEmitter.cpp */,
+				EAF72217188801F800F27C19 /* ofxEmitter.h */,
+				EAF72218188801F800F27C19 /* ofxParticle.cpp */,
+				EAF72219188801F800F27C19 /* ofxParticle.h */,
+				EAF7221A188801F800F27C19 /* ofxParticleWorld.cpp */,
+				EAF7221B188801F800F27C19 /* ofxParticleWorld.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		b0520b7d20d3f978fd7358785945208a /* src */ = {
 			isa = PBXGroup;
 			children = (
@@ -1379,14 +1355,6 @@
 				31941bac71b339f7a3e32124289fa076 /* svgTiny */,
 			);
 			name = libs;
-			sourceTree = "<group>";
-		};
-		cfdd139fa301cd9d0914d00f9e1d4fdc /* ofxSimpleGuiToo */ = {
-			isa = PBXGroup;
-			children = (
-				262847ac80ba7f38f6230b84144dac0d /* src */,
-			);
-			name = ofxSimpleGuiToo;
 			sourceTree = "<group>";
 		};
 		d27b2221a225ca523c01967633d9bd60 /* src */ = {
@@ -1547,7 +1515,9 @@
 				EAD540E41878B591001716BE /* ofxDisplayManager.cpp in Sources */,
 				EAD540E51878B591001716BE /* ofxDisplayManagerMac.mm in Sources */,
 				EAD540E61878B591001716BE /* ofxFenster.cpp in Sources */,
+				EAEC92E718893A74002E631B /* ofxPanel.cpp in Sources */,
 				EAD540E71878B591001716BE /* ofxFensterCanvas.cpp in Sources */,
+				EAEC92EA18893A74002E631B /* ofxToggle.cpp in Sources */,
 				EAD540E81878B591001716BE /* ofxFensterManager.cpp in Sources */,
 				EAD540DF1878B50C001716BE /* SyphonNameboundClient.m in Sources */,
 				EAD540E01878B50C001716BE /* ofxSyphonClient.mm in Sources */,
@@ -1555,8 +1525,9 @@
 				EAD541111878BE71001716BE /* ofxColorSetAnimated.cpp in Sources */,
 				EAD540E21878B50C001716BE /* ofxSyphonServerDirectory.mm in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
-				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
+				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				72a929d3561b8232a182abfcbb325491 /* ofxOscBundle.cpp in Sources */,
+				EAEC92E618893A74002E631B /* ofxLabel.cpp in Sources */,
 				5864ad82e20f15536d054ea319473de3 /* ofxOscMessage.cpp in Sources */,
 				640279ee111671bd026cb0137d5b121e /* ofxOscReceiver.cpp in Sources */,
 				8f5205aef8861ef234f0651aba6be2ee /* ofxOscSender.cpp in Sources */,
@@ -1567,15 +1538,21 @@
 				28090deb5109115003e8f1c540f04092 /* UdpSocketWin.cpp in Sources */,
 				62545d179c94265ca1389d4ac8d694a5 /* OscOutboundPacketStream.cpp in Sources */,
 				c4782ecc372420ace0615b749e1d0d6b /* OscPrintReceivedElements.cpp in Sources */,
+				EAEC92CF18892184002E631B /* ofxColorSetUI.cpp in Sources */,
 				0546d1a38e13bd319cc9755b5ca7e1a0 /* OscReceivedElements.cpp in Sources */,
+				EAEC92E818893A74002E631B /* ofxSlider.cpp in Sources */,
 				879a251454401bc0b6e4f238fc63135b /* OscTypes.cpp in Sources */,
 				b88a57b4b0ba6191ef3571e9227486e8 /* ofxSvg.cpp in Sources */,
+				EAEC92E318893A74002E631B /* ofxBaseGui.cpp in Sources */,
 				6a565a9714a6a12eb9098f521a79acc1 /* src_colors.cpp in Sources */,
 				1d6b78ef041b097ce4f423c499448272 /* svgtiny.cpp in Sources */,
+				EAEC92E518893A74002E631B /* ofxGuiGroup.cpp in Sources */,
 				4294163b15857489b21767695156d95b /* svgtiny_gradient.cpp in Sources */,
 				1b5f996886a777589d5dd7949f25ec5e /* svgtiny_list.cpp in Sources */,
+				EAF72222188801F800F27C19 /* ofxParticle.cpp in Sources */,
 				63b57ac5bf4ef088491e0317dbb2ecaa /* ofxXmlSettings.cpp in Sources */,
 				EAD5410F1878BE71001716BE /* ofxBasicColorSet.cpp in Sources */,
+				EAEC92E918893A74002E631B /* ofxSliderGroup.cpp in Sources */,
 				933a2227713c720ceff80fd967d0a8ee /* tinyxml.cpp in Sources */,
 				9d44dc88ef9e7991b4a09951e2e4769f /* tinyxmlerror.cpp in Sources */,
 				5a4349e9754d6fa14c0f2a3a1abc30b6 /* tinyxmlparser.cpp in Sources */,
@@ -1584,45 +1561,29 @@
 				5eb9303fa9b240750638ae7c0ec6a2bb /* MSAFluidSolver.cpp in Sources */,
 				d1395dd979998dcffa40acaccf9ff1f5 /* ofxMSAInteractiveObject.cpp in Sources */,
 				4007418a7e820c30f893250dd9f81667 /* MSAObjCPointer.cpp in Sources */,
-				a0b7f6a3ec34b4f84321385da811b467 /* ofxSimpleGuiButton.cpp in Sources */,
-				e39bf54c7233c89a5bb421748863e43d /* ofxSimpleGuiColorPicker.cpp in Sources */,
-				2dd56bbc82953d6ae0a018bfad910b7d /* ofxSimpleGuiComboBox.cpp in Sources */,
-				495e773e470ff7c742646e77652f964d /* ofxSimpleGuiContent.cpp in Sources */,
-				49890708c36fa822fc58a60b78029bb3 /* ofxSimpleGuiFPSCounter.cpp in Sources */,
-				2c776d21a9559288b0f7aed9b1be072d /* ofxSimpleGuiMovieSlider.cpp in Sources */,
-				49073c5c875b61f6d54cf6ab8584e712 /* ofxSimpleGuiQuadWarp.cpp in Sources */,
-				76f1472575bcca088fe3454bc580db3c /* ofxSimpleGuiSlider2d.cpp in Sources */,
-				cf142a7d9914b99e6e2870527205bee8 /* ofxSimpleGuiTitle.cpp in Sources */,
-				3317b76ee9202b4c6482d15c4ec6cc7b /* ofxSimpleGuiToggle.cpp in Sources */,
-				06980ff65ed01afe2bcaad5e92e994fd /* ofxSimpleGuiConfig.cpp in Sources */,
-				8ce60c8f4001811d5b27d0f8f82c8148 /* ofxSimpleGuiControl.cpp in Sources */,
-				1f910dcf02326b0e25059352edd39c0c /* ofxSimpleGuiPage.cpp in Sources */,
-				c2ed558d391ba9692d3bf70567fb7804 /* ofxSimpleGuiToo.cpp in Sources */,
-				7f8d13cd42f89d3284829cf0a5a4cba1 /* ofxSimpleGuiValueControl.cpp in Sources */,
+				EAF72223188801F800F27C19 /* ofxParticleWorld.cpp in Sources */,
 				EADF31D217A92E4100B55A44 /* ofdAnimation.cpp in Sources */,
 				EADF31D317A92E4100B55A44 /* ofdArduinoClient.cpp in Sources */,
 				EADF31D417A92E4100B55A44 /* ofdArduinoCommon.cpp in Sources */,
+				EAF7221F188801F800F27C19 /* ofxAttractor.cpp in Sources */,
 				EADF31D517A92E4100B55A44 /* ofdArduinoServer.cpp in Sources */,
 				EADF31D817A92E4100B55A44 /* ofdLinkGui.cpp in Sources */,
 				EADF31D917A92E4100B55A44 /* ofdLinksGui.cpp in Sources */,
 				EADF31DA17A92E4100B55A44 /* ofdMidiForGui.cpp in Sources */,
 				EADF31DB17A92E4100B55A44 /* ofdMidiLink.cpp in Sources */,
+				EAEC92E418893A74002E631B /* ofxButton.cpp in Sources */,
 				EADF31DD17A92E4100B55A44 /* msaFluidParticlesApp.cpp in Sources */,
 				EADF31DE17A92E4100B55A44 /* Particle.cpp in Sources */,
 				EADF31DF17A92E4100B55A44 /* ParticleSystem.cpp in Sources */,
 				EADF31E017A92E4100B55A44 /* ofdOsc.cpp in Sources */,
 				EADF31E117A92E4100B55A44 /* ofdOscReader.cpp in Sources */,
-				EADF31E217A92E4100B55A44 /* ofdEmitter.cpp in Sources */,
-				EADF31E317A92E4100B55A44 /* ofdForce.cpp in Sources */,
-				EADF31E417A92E4100B55A44 /* ofdPart.cpp in Sources */,
-				EADF31E517A92E4100B55A44 /* ofdParticles_Settings.cpp in Sources */,
-				EADF31E617A92E4100B55A44 /* ofdWorld.cpp in Sources */,
 				EADF31E717A92E4100B55A44 /* ofdRay.cpp in Sources */,
 				EADF31E817A92E4100B55A44 /* ofdRays.cpp in Sources */,
+				EAF72220188801F800F27C19 /* ofxConstraint.cpp in Sources */,
 				EADF31E917A92E4100B55A44 /* ofdPattern.cpp in Sources */,
 				EADF31EB17A92E4100B55A44 /* ofdSpreadElement.cpp in Sources */,
+				EAF72221188801F800F27C19 /* ofxEmitter.cpp in Sources */,
 				EADF31EC17A92E4100B55A44 /* ofdSpreadFullShape.cpp in Sources */,
-				EADF31EE17A92E4100B55A44 /* ofdSpreadGuiWindowWithOsc.cpp in Sources */,
 				EADF31EF17A92E4100B55A44 /* ofdSpreadPatterns.cpp in Sources */,
 				EADF31F017A92E4100B55A44 /* ofdSpreads.cpp in Sources */,
 				EADF31F117A92E4100B55A44 /* ofdSpreads_GenSettings.cpp in Sources */,

@@ -1,13 +1,14 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 // DECLARATION DES ELEMENTS D'INTERFACE ----------------------
-void testApp::setup()
+void ofApp::setup()
 {
     m_trace.init(true, "GUI");
     ofSetLogLevel(OF_LOG_VERBOSE);
     
     ofSetWindowTitle("Spreads : Interface");
     createDisplay();
+    ofSetBackgroundAuto(true);
     
     // First Load Settings -----------------------------------
     loadSettings();
@@ -31,7 +32,7 @@ void testApp::setup()
 }
 
 
-void testApp::createDisplay(){
+void ofApp::createDisplay(){
     /*
     mp_pointerSpreadDisplay = ofxFensterManager::get()->createFenster(1600, 0, 1600, 900, OF_WINDOW);
     mp_pointerSpreadDisplay->addListener(&m_spreadDisplay);
@@ -44,7 +45,7 @@ void testApp::createDisplay(){
     
 }
 
-void testApp::setupMSA(){
+void ofApp::setupMSA(){
     
     mOut_vars.mI_MSAfluidCellsX = 120;
     mOut_vars.mI_MSAResizeFluid = 0;
@@ -58,7 +59,7 @@ void testApp::setupMSA(){
     
 }
 
-void testApp::setupGUI(){
+void ofApp::setupGUI(){
     
     // GUI Interface -----------------------------------------
     
@@ -76,139 +77,89 @@ void testApp::setupGUI(){
     modeMSA[4] = "Motion";
     modeMSA[5] = "DrawCount";
     
-    // PAGE 1 : PRESETS
-    // -------------------------------------------------------------------
-    //    loadPresetsFromFolder("Nikkings");
-    
-    // Presets MSA
-    //    for(int i=0; i<PRESET_MAX_COUNT; i++){
-    //        string buttonName = "LOAD " + m_nikkings[i].name;
-    //        gui.addButton("LOAD " + m_nikkings[i].name, m_nikkings[i].action);
-    //    }
-    //    vector<nikking>::iterator    onePreset;
-    //    for(onePreset=m_nikkings.begin(); onePreset!=m_nikkings.end(); onePreset++){
-    //        gui.addButton((*onePreset).name, (*onePreset).action);
-    //    }
-    //    gui.addTitle("Save as").setNewColumn(true);
-    //    gui.addButton("Do save", (*onePreset).action);
-    
-    // PAGE 2 : General
-    // -------------------------------------------------------------------
-    //    gui.addPage(PAGE_2_Name);
-    
     // PARTICLES SECTION ----------------------------------------------------------
-    gui.addTitle("PARTICLES");
-    gui.addToggle("particulesOn", mOut_vars.mI_particulesOn);
+    // TODO : replace with ofxParticleWorld GUI
+    m_gpParts.setName("Parts");
+    m_gpParts.add(m_btPartsOn.set("ParticulesOn", mOut_vars.mI_particulesOn));
+    m_gpGen.add(m_gpParts);
     
-    partToSetup.setup();
-    gui.addComboBox("Mode Parts", mOut_vars.mI_modeParts,partToSetup.m_iNbAvailableTypes, partToSetup.m_aAvailableTypes);
-    gui.addSlider("emitSize", mOut_vars.mI_emitSize, 1, 20);
-    gui.addSlider("Forces", mOut_vars.mI_coefForces, 0, 1);
-    gui.addSlider("ForcesX", mOut_vars.mI_coefForces_X, 0, 1);
-    gui.addSlider("ForcesY", mOut_vars.mI_coefForces_Y, 0, 1);
-    gui.addSlider("speedRotation", mOut_vars.mI_speedRotation, 0, 1);
-    gui.addSlider("Pulse", mOut_vars.mI_pulse, 0, 5);
-    gui.addSlider("lifeBase", mOut_vars.mI_lifeBase, 0, 50);
-    
-    //    gui.addSlider("emitFlow", mOut_vars.mI_emitFlow, 0, 0.1);
-    gui.addTitle("TUBES");
-    gui.addToggle("raysOn", mOut_vars.mI_raysOn);
-    gui.addToggle("traitsOn", mOut_vars.mI_traitsOn);
-    
-    gui.addSlider("restartIntensity", mOut_vars.mI_restartIntensity, 0, 255);
-    gui.addSlider("Tube Delay", mOut_vars.mI_tubeDelay, mx_minTubeDelay, mx_maxTubeDelay);
-    gui.addSlider("Tube Period", mOut_vars.mI_tubePeriod, mx_minTubePeriod,  mx_maxTubePeriod);
-    gui.addSlider("Rays Delay", mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay);
-    gui.addSlider("Rays Period", mOut_vars.mI_raysPeriod, mx_minRaysPeriod, mx_maxRaysPeriod);
+    // TUBES ---------------------------------------------------------------------
+    m_gpTubes.setName("Tubes");
+    m_gpTubes.add(m_btRaysOn.set("raysOn", mOut_vars.mI_raysOn));
+    m_gpTubes.add(m_btTraitsOn.set("traitsOn", mOut_vars.mI_traitsOn));
+    m_gpTubes.add(m_slRestartIntensity.set("restartIntensity", mOut_vars.mI_restartIntensity, 0, 255));
+    m_gpTubes.add(m_slTubeDelay.set("TubeDelay", mOut_vars.mI_tubeDelay, mx_minTubeDelay, mx_maxTubeDelay));
+    m_gpTubes.add(m_slTubePeriod.set("Tube Period", mOut_vars.mI_tubePeriod, mx_minTubePeriod,  mx_maxTubePeriod));
+    m_gpTubes.add(m_slRaysDelay.set("Rays Delay", mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay));
+    m_gpTubes.add(m_slRaysPeriod.set("Rays Period", mOut_vars.mI_raysPeriod, mx_minRaysPeriod, mx_maxRaysPeriod));
+    m_gpGen.add(m_gpTubes);
     
     // SPREADS SECTION ----------------------------------------------------------
-    gui.addTitle("SPREADS");
-    gui.addSlider("Pattern Family", mOut_vars.mI_numFamily, 0 , 20);
-    gui.addSlider("Num Pattern", mOut_vars.mI_numPattern, 0 , 11);
-    gui.addSlider("seqMinRate", mOut_vars.mI_seqMinRate, 0, 1);
-    gui.addSlider("seqMaxRate", mOut_vars.mI_seqMaxRate, 0, 1);
+    m_gpSpreads.setName("Spreads");
+    m_gpSpreads.add(m_slPatternFamily.set("Pattern Family", mOut_vars.mI_numFamily, 0 , 20));
+    m_gpSpreads.add(m_slNumPattern.set("Num Pattern", mOut_vars.mI_numPattern, 0 , 11));
+    m_gpSpreads.add(m_slSeqMinRate.set("seqMinRate", mOut_vars.mI_seqMinRate, 0, 1));
+    m_gpSpreads.add(m_slSeqMaxRate.set("seqMaxRate", mOut_vars.mI_seqMaxRate, 0, 1));
+    m_gpSpreads.add(m_slModeTypo2.set("modeTypo2", mOut_vars.mI_modeSeq, 0, 3));
+    // TODO : ajouter un label
+    m_gpGen.add(m_gpSpreads);
     
-    gui.addComboBox("modeTypo2", mOut_vars.mI_modeSeq, 4, modeSeq_Lbl);
-    
-    // FXs ---------------------------------------------------
-    /*
-    gui.addTitle("FX");
-    fxToList.initList();
-    
-    gui.addComboBox("Mode FX", mOut_vars.mI_FX_mode, fxToList.modeListNb(), fxToList.modeList());
-    gui.addSlider("Radius", mOut_vars.mI_FX_radius, 0, 1);
-    gui.addSlider("Kal Nb Faces", mOut_vars.mI_FX_kalNbFaces, 1, 12);
-    gui.addSlider("Kal Rot Period", mOut_vars.mI_FX_kalRotPeriod, 0, 1000);
-    */
-    
-    // SPREADS SECTION ----------------------------------------------------------
-    gui.addTitle("COLORS").setNewColumn(true);
-    // Manual casting for list of colors sets
-    //    string listOfSets[m_ColorSetBase.nbSets()];
-    //    for(int i=0; i<m_ColorSetBase.nbSets(); i++){
-    //        listOfSets[i] = m_ColorSetBase.getList()[i];
-    //    }
-    //    gui.addComboBox("ColorSet", m_ColorSetBase.m_currentSet, m_ColorSetBase.nbSets(), listOfSets);
-    //    gui.addButton("Load colors from Set", m_loadColorsFromSet);
-    gui.addColorPicker("Color 1", mOut_vars._myColor_1);
-    gui.addColorPicker("Color 2", mOut_vars._myColor_2);
-    gui.addColorPicker("Color 3", mOut_vars._myColor_3);
-    gui.addColorPicker("Color 4", mOut_vars._myColor_4);
-    gui.addSlider("PERIOD", mOut_vars.mI_colorPeriod, 0, 10);
-    gui.addSlider("HUE DECAY", mOut_vars.mI_hueDecay, 0, 1);
-    gui.addSlider("DESAT", mOut_vars.mI_satDesat, 0, 1);
     
     // Audio réaction ---------------------------------------------------
-    gui.addTitle("AUDIO");
-    gui.addToggle("mode Audio", mOut_vars.mI_AudioR_mode);
-    gui.addSlider("Bass_BangLevel", mOut_vars.mI_Bass_BangLevel, 0, 1);
-    gui.addSlider("Mid_BangLevel", mOut_vars.mI_Mid_BangLevel, 0, 1);
-    gui.addSlider("High_BangLevel", mOut_vars.mI_High_BangLevel, 0, 1);
+    m_gpAudio.setName("Audio");
+    m_gpAudio.add(m_btModeAudio.set("mode Audio", mOut_vars.mI_AudioR_mode));
+    m_gpAudio.add(m_slBass_BangLevel.set("Bass_BangLevel", mOut_vars.mI_Bass_BangLevel, 0, 1));
+    m_gpAudio.add(m_slMid_BangLevel.set("Mid_BangLevel", mOut_vars.mI_Mid_BangLevel, 0, 1));
+    m_gpAudio.add(m_slHigh_BangLevel.set("High_BangLevel", mOut_vars.mI_High_BangLevel, 0, 1));
+    m_gpGen.add(m_gpAudio);
     
-    gui.addTitle("MSA Useful");
-    gui.addComboBox("drawMode"               , mOut_vars.mI_MSAmode, 6, modeMSA);
-    gui.addSlider("viscocity"                , mOut_vars.mI_MSAfluidSolverViscocity, 0.0, max_viscosity);
-    gui.addSlider("colorDiffusion"           , mOut_vars.mI_MSAfluidSolverColorDiffusion, 0.0, 0.0003);
-    gui.addSlider("fadeSpeed"                , mOut_vars.mI_MSAfluidSolverFadeSpeed, 0.0, 0.1);
-    gui.addSlider("deltaT"                   , mOut_vars.mI_MSAfluidSolverDeltaT, 0.1, 5);
-    gui.addSlider("colorMult"                , mOut_vars.mI_MSAcolorMult, 0, 100);
-    gui.addSlider("velocityMult"             , mOut_vars.mI_MSAvelocityMult, 0, 100);
-    // MOVES ---------------------------------------------------
-    //    gui.addTitle("MOVES");
-    //    gui.addSlider("Shake X", mOut_vars.mI_moveShakeX, 0, 0.05);
-    //    gui.addSlider("Shake Y", mOut_vars.mI_moveShakeY, 0, 0.05);
-    
-    //    gui.currentPage().setXMLName(ofToString(NikkingsFolder)+m_currentNikking.name+PAGE_2_Name+".xml");
-    //    gui.loadFromXML();
+    // MSA Useful ---------------------------------------------------------
+    m_gpMSA_Useful.setName("MSAUseful");
+    // TODO : Add Label
+    m_gpMSA_Useful.add(m_slDrawMode.set("drawMode"               , mOut_vars.mI_MSAmode, 0, 5));
+    m_gpMSA_Useful.add(m_slViscocity.set("viscocity"                , mOut_vars.mI_MSAfluidSolverViscocity, 0.0, max_viscosity));
+    m_gpMSA_Useful.add(m_slColorDiffusion.set("colorDiffusion"           , mOut_vars.mI_MSAfluidSolverColorDiffusion, 0.0, 0.0003));
+    m_gpMSA_Useful.add(m_slFadeSpeed.set("fadeSpeed"                , mOut_vars.mI_MSAfluidSolverFadeSpeed, 0.0, 0.1));
+    m_gpMSA_Useful.add(m_slDeltaT.set("deltaT"                   , mOut_vars.mI_MSAfluidSolverDeltaT, 0.1, 5));
+    m_gpMSA_Useful.add(m_slColorMult.set("colorMult"                , mOut_vars.mI_MSAcolorMult, 0, 100));
+    m_gpMSA_Useful.add(m_slVelocityMult.set("velocityMult"             , mOut_vars.mI_MSAvelocityMult, 0, 100));
+    m_gpMsa.add(m_gpMSA_Useful);
     
     // PAGE 3 : AUDIO + MSA parameters
-    // -------------------------------------------------------------------
-    gui.addPage(PAGE_3_Name);
+    m_gpMSA_Useless.setName("MSAUseless");
+    m_gpMSA_Useless.add(m_slfluidCellsX.set("fluidCellsX"              , mOut_vars.mI_MSAfluidCellsX, 20, 400));
+    m_gpMSA_Useless.add(m_btResizeFluid.set("resizeFluid"              , mOut_vars.mI_MSAResizeFluid));
+    m_gpMSA_Useless.add(m_slSolverIterations.set("solverIterations"         , mOut_vars.mI_MSAfluidSolverSolverIterations, 1, 50));
+    m_gpMSA_Useless.add(m_btDoRGB.set("doRGB"                    , mOut_vars.mI_MSAdoRGB));
+    m_gpMSA_Useless.add(m_btDoVorticityConfinement.set("doVorticityConfinement"   , mOut_vars.mI_MSAdoVorticityConfinement));
+    m_gpMSA_Useless.add(m_btDrawFluid.set("drawFluid"                , mOut_vars.mI_MSAdrawFluid));
+    m_gpMSA_Useless.add(m_btDrawParticles.set("drawParticles"            , mOut_vars.mI_MSAdrawParticles));
+    m_gpMSA_Useless.add(m_btWrapX.set("wrapX"                    , mOut_vars.mI_MSAfluidSolverWrap_x));
+    m_gpMSA_Useless.add(m_btWrapY.set("wrapY"                    , mOut_vars.mI_MSAfluidSolverWrap_y));
+    m_gpMsa.add(m_gpMSA_Useless);
     
+    // COULEURS ---------------------------------------------------------------------
+    m_gpColors.add(mOut_vars.mI_ColorSet.m_oUI.m_gGroup);
+    m_uiColors.setup(m_gpColors);
+    m_uiColors.setName("Colors");
     
+//    m_gpGen.add(m_gpColors);
     
-    gui.addTitle("MSA Useless");
-    gui.addSlider("fluidCellsX"              , mOut_vars.mI_MSAfluidCellsX, 20, 400);
-    gui.addButton("resizeFluid"              , mOut_vars.mI_MSAResizeFluid);
-    gui.addSlider("solverIterations"         , mOut_vars.mI_MSAfluidSolverSolverIterations, 1, 50);
-    gui.addToggle("doRGB"                    , mOut_vars.mI_MSAdoRGB);
-    gui.addToggle("doVorticityConfinement"   , mOut_vars.mI_MSAdoVorticityConfinement);
-    gui.addToggle("drawFluid"                , mOut_vars.mI_MSAdrawFluid);
-    gui.addToggle("drawParticles"            , mOut_vars.mI_MSAdrawParticles);
-    gui.addToggle("wrapX"                    , mOut_vars.mI_MSAfluidSolverWrap_x);
-    gui.addToggle("wrapY"                    , mOut_vars.mI_MSAfluidSolverWrap_y);
+    // UIs
+    m_uiGen.setup(m_gpGen);
+    m_uiGen.setName("Generals");
     
-    //    gui.currentPage().setXMLName(NikkingsFolder+m_currentNikking.name+PAGE_3_Name+".xml");
-    //    gui.loadFromXML();
+    m_uiMsa.setup(m_gpMsa);
+    m_uiMsa.setName("MSA");
     
-    gui.setAutoSave(false);
-    gui.setDefaultKeys(false);                          // Pas de touches
-    gui.setPage(1);
-    gui.show();
+    // Setting places
+    m_uiGen.setPosition(10, 30);
+    m_uiMsa.setPosition(260, 30);
+    m_uiColors.setPosition(510, 30);
     
 }
 
-void testApp::setupOSC(){
+void ofApp::setupOSC(){
     
     // PARTICLES SECTION ----------------------------------------------------------
     m_oOsc.add_link("/Tubes/On", 0, mOut_vars.mI_traitsOn);
@@ -220,6 +171,10 @@ void testApp::setupOSC(){
     m_oOsc.add_link("/Rays/Delay", 0, mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay);
     m_oOsc.add_link("/Rays/Period", 0, mOut_vars.mI_raysPeriod,mx_minRaysPeriod, mx_maxRaysPeriod);
     
+    /*
+     
+     TODO, link OSC with new ofxParticleWorld GUI setup
+     
     partToSetup.setup();
     m_oOsc.add_link("/Parts/On", 0, mOut_vars.mI_particulesOn);
     m_oOsc.add_link("/Parts/Mode", 0, mOut_vars.mI_modeParts, 0, partToSetup.m_iNbAvailableTypes-1);
@@ -230,6 +185,7 @@ void testApp::setupOSC(){
     m_oOsc.add_link("/Parts/Rotation", 0, mOut_vars.mI_speedRotation, 0, 1);
     m_oOsc.add_link("/Parts/Pulse", 0, mOut_vars.mI_pulse, 0, 5);
     m_oOsc.add_link("/Parts/Life", 0, mOut_vars.mI_lifeBase, 0, 50);
+    */
     
     // SPREADS SECTION ----------------------------------------------------------
     m_oOsc.add_link("/Patterns/Family", 0, mOut_vars.mI_numFamily, 0 , 20);
@@ -299,14 +255,14 @@ void testApp::setupOSC(){
     
 }
 
-void testApp::updateOSC(){
+void ofApp::updateOSC(){
     
     m_oOsc.update();
     mOut_vars.m_messages = m_oOsc;
     
 }
 
-void testApp::loadSettings(){
+void ofApp::loadSettings(){
     
     mx_minRaysPeriod = 100;
     mx_maxRaysPeriod = 500;
@@ -320,10 +276,7 @@ void testApp::loadSettings(){
     mx_minTubeDelay = 0;
     mx_maxTubeDelay = 0.500;
     
-    // Fix values for ever
-    mOut_vars.mI_emitFlow = 0.005;
-    
-    mOut_vars.mI_FX_kalNbFaces = 1;
+    //mOut_vars.mI_FX_kalNbFaces = 1;
     
     //    gui.addSlider("fluidCellsX"              , mOut_vars.mI_MSAfluidCellsX, 20, 400);
     //    gui.addButton("resizeFluid"              , mOut_vars.mI_MSAResizeFluid);
@@ -339,7 +292,7 @@ void testApp::loadSettings(){
 
 
 
-void    testApp::savePresetsAs(){
+void    ofApp::savePresetsAs(){
     
     // Page 3 - MSA
     //    gui.page(PAGE_3_Name).setXMLName(NikkingsFolder+m_currentNikking.name+PAGE_3_Name+".xml");
@@ -347,9 +300,12 @@ void    testApp::savePresetsAs(){
     
 }
 
-void testApp::draw(){
+void ofApp::draw(){
     // Dessins des contrôles
-    gui.draw();
+    m_uiGen.draw();
+    m_uiMsa.draw();
+    m_uiColors.draw();
+    
     // Affichage des messages de fonctionnement
     ofPushStyle();
     ofSetColor(255);
@@ -377,7 +333,7 @@ void testApp::draw(){
      */
 }
 
-void testApp::update(){
+void ofApp::update(){
     
     // Reload Colors
     mOut_vars._myColor_1.setBrightness(mOut_vars._myColor_1_Brg);
@@ -432,28 +388,30 @@ void testApp::update(){
     
 }
 
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
     mOut_vars.event_type = event_keyPressed;
     mOut_vars.key_pressed = key;
 }
 
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
     mOut_vars.event_type = event_keyReleased;
     mOut_vars.key_released = key;
 }
 
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
     //
     mOut_vars.event_type = event_winResized;
 }
 
-void testApp::MSAload(){
+/*
+void ofApp::MSAload(){
     // Changement de page MSA
     gui.page(PAGE_3_Name).setXMLName(NikkingsFolder+m_currentNikking.name+PAGE_3_Name+".xml");
     gui.page(PAGE_3_Name).loadFromXML();
 }
+*/
 
-void    testApp::loadPresetsFromFolder(string _folder){
+void    ofApp::loadPresetsFromFolder(string _folder){
     
     ofDirectory dir;
     nikking     nikking_toAdd;

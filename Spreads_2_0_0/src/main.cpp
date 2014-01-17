@@ -1,5 +1,5 @@
 #include "ofMain.h"
-#include "testApp.h"
+#include "ofApp.h"
 #include "ofxFensterManager.h"
 
 //========================================================================
@@ -17,6 +17,6 @@ int main( ){
      */
     
     ofxFensterManager::setup(1280, 1024, OF_WINDOW);
-	ofRunApp(new testApp());
+	ofRunApp(new ofApp());
 
 }
