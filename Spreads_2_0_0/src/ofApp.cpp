@@ -138,7 +138,8 @@ void ofApp::setupGUI(){
     
     
     // PARTICLES SECTION ----------------------------------------------------------
-    m_uiParts.setup(m_spreadDisplay.m_oPartWorld.m_pgSets, "Parts.xml");
+    m_spreadDisplay.m_oPartWorld.m_pgSets.setName("MyParts");
+    m_uiParts.setup(m_spreadDisplay.m_oPartWorld.m_pgSets, "MyParts.xml");
     m_uiParts.add(m_btPartsOn.set("ParticulesOn", mOut_vars.mI_particulesOn));
     
     // COULEURS ---------------------------------------------------------------------
@@ -171,104 +172,12 @@ void ofApp::setupGUI(){
     
     m_oLiveGrabberColors.setup((ofParameterGroup&)m_uiColors.getParameter(),9001,"localhost",9000);
     m_oLiveGrabberParts.setup((ofParameterGroup&)m_uiParts.getParameter(),9002,"localhost",9000);
-    m_oLiveGrabberOthers.setup((ofParameterGroup&)m_uiTubesPatterns.getParameter(),9003,"localhost",9000);
-    m_oLiveGrabberOthers.setup((ofParameterGroup&)m_uiMSA.getParameter(),9004,"localhost",9000);
+    m_oLiveGrabberTubesPatterns.setup((ofParameterGroup&)m_uiTubesPatterns.getParameter(),9003,"localhost",9000);
+    m_oLiveGrabberMSA.setup((ofParameterGroup&)m_uiMSA.getParameter(),9004,"localhost",9000);
 
 }
 
 void ofApp::setupOSC(){
-    
-    // PARTICLES SECTION ----------------------------------------------------------
-    m_oOsc.add_link("/Tubes/On", 0, mOut_vars.mI_traitsOn);
-    m_oOsc.add_link("/Tubes/Intensity", 0, mOut_vars.mI_restartIntensity, 0, 255);
-    m_oOsc.add_link("/Tubes/Delay", 0, mOut_vars.mI_tubeDelay, mx_minTubeDelay, mx_maxTubeDelay);
-    m_oOsc.add_link("/Tubes/Period", 0, mOut_vars.mI_tubePeriod, mx_minTubePeriod,  mx_maxTubePeriod);
-    
-    m_oOsc.add_link("/Rays/On", 0, mOut_vars.mI_raysOn);
-    m_oOsc.add_link("/Rays/Delay", 0, mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay);
-    m_oOsc.add_link("/Rays/Period", 0, mOut_vars.mI_raysPeriod,mx_minRaysPeriod, mx_maxRaysPeriod);
-    
-    /*
-     
-     TODO, link OSC with new ofxParticleWorld GUI setup
-     
-    partToSetup.setup();
-    m_oOsc.add_link("/Parts/On", 0, mOut_vars.mI_particulesOn);
-    m_oOsc.add_link("/Parts/Mode", 0, mOut_vars.mI_modeParts, 0, partToSetup.m_iNbAvailableTypes-1);
-    m_oOsc.add_link("/Parts/Size", 0, mOut_vars.mI_emitSize, 1, 20);
-    m_oOsc.add_link("/Parts/Power", 0, mOut_vars.mI_coefForces, 0, 1);
-    m_oOsc.add_link("/Parts/PowerX", 0, mOut_vars.mI_coefForces_X, 0, 1);
-    m_oOsc.add_link("/Parts/PowerY", 0, mOut_vars.mI_coefForces_Y, 0, 1);
-    m_oOsc.add_link("/Parts/Rotation", 0, mOut_vars.mI_speedRotation, 0, 1);
-    m_oOsc.add_link("/Parts/Pulse", 0, mOut_vars.mI_pulse, 0, 5);
-    m_oOsc.add_link("/Parts/Life", 0, mOut_vars.mI_lifeBase, 0, 50);
-    */
-    
-    // SPREADS SECTION ----------------------------------------------------------
-    m_oOsc.add_link("/Patterns/Family", 0, mOut_vars.mI_numFamily, 0 , 20);
-    m_oOsc.add_link("/Patterns/Number", 0, mOut_vars.mI_numPattern, 0 , 11);
-    m_oOsc.add_link("/Patterns/Min", 0, mOut_vars.mI_seqMinRate, 0, 1);
-    m_oOsc.add_link("/Patterns/Max", 0, mOut_vars.mI_seqMaxRate, 0, 1);
-    m_oOsc.add_link("/Patterns/Mode", 0, mOut_vars.mI_modeSeq, 0, 3);
-    
-    
-    // SPREADS SECTION ----------------------------------------------------------
-    m_oOsc.add_link("/Colors/1/Hue", 0, mOut_vars._myColor_1_Hue);
-    m_oOsc.add_link("/Colors/1/Sat", 0, mOut_vars._myColor_1_Sat);
-    m_oOsc.add_link("/Colors/1/Bright", 0, mOut_vars._myColor_1_Brg);
-    
-    m_oOsc.add_link("/Colors/2/Hue", 0, mOut_vars._myColor_2_Hue);
-    m_oOsc.add_link("/Colors/2/Sat", 0, mOut_vars._myColor_2_Sat);
-    m_oOsc.add_link("/Colors/2/Bright", 0, mOut_vars._myColor_2_Brg);
-    
-    m_oOsc.add_link("/Colors/3/Hue", 0, mOut_vars._myColor_3_Hue);
-    m_oOsc.add_link("/Colors/3/Sat", 0, mOut_vars._myColor_3_Sat);
-    m_oOsc.add_link("/Colors/3/Bright", 0, mOut_vars._myColor_3_Brg);
-    
-    m_oOsc.add_link("/Colors/4/Hue", 0, mOut_vars._myColor_4_Hue);
-    m_oOsc.add_link("/Colors/4/Sat", 0, mOut_vars._myColor_4_Sat);
-    m_oOsc.add_link("/Colors/4/Bright", 0, mOut_vars._myColor_4_Brg);
-    
-    m_oOsc.add_link("/Colors/Period", 0, mOut_vars.mI_colorPeriod, 0, 10);
-    m_oOsc.add_link("/Colors/Decay", 0, mOut_vars.mI_hueDecay, 0, 1);
-    m_oOsc.add_link("/Colors/Desat", 0, mOut_vars.mI_satDesat, 0, 1);
-    
-    // MOVES ---------------------------------------------------
-    //    0, mOut_vars.mI_moveShakeX = m_oOsc.getSmartValue("/Moves/Shake/X", 0, 0.05);
-    //    0, mOut_vars.mI_moveShakeY = m_oOsc.getSmartValue("/Moves/Shake/Y", 0, 0.05);
-    
-    // FXs ---------------------------------------------------
-    /*
-    m_oOsc.add_link("/FXs/Mode", 0, mOut_vars.mI_FX_mode, 0, fxToList.modeListNb()-1);
-    m_oOsc.add_link("/FXs/Radius", 0, mOut_vars.mI_FX_radius, 0, 1);
-    m_oOsc.add_link("/FXs/KalNbFaces", 0, mOut_vars.mI_FX_kalNbFaces, 1, 12);
-    m_oOsc.add_link("/FXs/KalRotPeriod", 0, mOut_vars.mI_FX_kalRotPeriod, 0, 1000);
-    */
-    
-    // PAGE 3 : AUDIO + MSA parameters
-    m_oOsc.add_link("/MSA/DrawMode", 0, mOut_vars.mI_MSAmode, 0, 5);
-    m_oOsc.add_link("/MSA/Viscosity", 0, mOut_vars.mI_MSAfluidSolverViscocity , 0.0, max_viscosity);
-    m_oOsc.add_link("/MSA/ColorDiffusion", 0, mOut_vars.mI_MSAfluidSolverColorDiffusion, 0.0, 0.0003);
-    m_oOsc.add_link("/MSA/FadeSpeed", 0, mOut_vars.mI_MSAfluidSolverFadeSpeed, 0.0, 0.1);
-    m_oOsc.add_link("/MSA/DeltaT", 0, mOut_vars.mI_MSAfluidSolverDeltaT, 0.1, 5);
-    m_oOsc.add_link("/MSA/ColorMult", 0, mOut_vars.mI_MSAcolorMult, 0, 100);
-    m_oOsc.add_link("/MSA/VelocityMult", 0, mOut_vars.mI_MSAvelocityMult, 0, 100);
-    
-    
-    // NOTES ----------------------------------------------------------------
-    // PAD PAGE 1 -----------------------------------------------------------------
-    //    int noteStart = m_oTools.midiNoteToInt("C3");
-    //    int noteEnd = m_oTools.midiNoteToInt("B3");
-    //    int noteLoop = 0;
-    //    string noteStr = "C0";
-    //
-    //
-    //    for(noteLoop=noteStart; noteLoop<noteEnd; noteLoop++){
-    //        noteStr = m_oTools.midiNoteToString(noteLoop);
-    //
-    //        mOut_vars.m_notes[noteStr] = false;
-    //        m_oOsc.add_link("/notes/" + noteStr, 0, mOut_vars.m_notes[noteStr]);
-    //    }
     
 }
 
@@ -276,9 +185,10 @@ void ofApp::updateOSC(){
     
     //    m_oOsc.update();
     m_oLiveGrabberColors.update();
-    m_oLiveGrabberOthers.update();
+    m_oLiveGrabberTubesPatterns.update();
+    m_oLiveGrabberMSA.update();
     m_oLiveGrabberParts.update();
-    mOut_vars.m_messages = m_oOsc;
+    //mOut_vars.m_messages = m_oOsc;
     
 }
 

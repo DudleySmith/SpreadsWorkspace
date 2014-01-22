@@ -16,7 +16,6 @@
 #include "ofdSpreadDisplay.h"
 
 #include "ofxColorSet.h"
-#include "ofdOsc.h"
 #include "ofxLiveGrabber.h"
 
 //#include "msaFluidParticlesApp.h"
@@ -81,10 +80,10 @@ private:
     float   mx_minRaysDelay, mx_maxRaysDelay, mx_minTubeDelay, mx_maxTubeDelay;
     
     // OSC ----------------------------------------------
-    ofdOsc m_oOsc;
     ofxOscLiveGrabberParameterSync m_oLiveGrabberColors;
     ofxOscLiveGrabberParameterSync m_oLiveGrabberParts;
-    ofxOscLiveGrabberParameterSync m_oLiveGrabberOthers;
+    ofxOscLiveGrabberParameterSync m_oLiveGrabberTubesPatterns;
+    ofxOscLiveGrabberParameterSync m_oLiveGrabberMSA;
     void updateOSC();
     
 private:
