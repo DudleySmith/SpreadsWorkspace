@@ -1,12 +1,6 @@
 #pragma once
 
-
-#define PAGE_2_Name "_General"
-#define PAGE_3_Name "_MSA"
-
 #define NikkingsFolder  "Nikkings/"
-
-#define max_viscosity 0.005
 
 // Ext addons
 //#include "ofxSimpleGuiToo.h"
@@ -37,7 +31,6 @@ public:
     void createDisplay();
     void setupGUI();
     void setupOSC();
-    void setupMSA();
     
     void update();
     
@@ -62,7 +55,6 @@ private:
     
     nikking     m_currentNikking;
     void    loadPresetsFromFolder(string _folder);
-    void    savePresetsAs();
     
     
 public:
@@ -73,17 +65,12 @@ private:
     bool m_loadColorsFromSet;
     
 private:
-    // Settings -------------------------------------------
-    void loadSettings();
-    
-    int     mx_minRaysPeriod, mx_maxRaysPeriod, mx_minTubePeriod, mx_maxTubePeriod;
-    float   mx_minRaysDelay, mx_maxRaysDelay, mx_minTubeDelay, mx_maxTubeDelay;
-    
     // OSC ----------------------------------------------
     ofxOscLiveGrabberParameterSync m_oLiveGrabberColors;
     ofxOscLiveGrabberParameterSync m_oLiveGrabberParts;
     ofxOscLiveGrabberParameterSync m_oLiveGrabberTubesPatterns;
     ofxOscLiveGrabberParameterSync m_oLiveGrabberMSA;
+    
     void updateOSC();
     
 private:
@@ -99,59 +86,11 @@ private:
     ofxPanel m_uiParts;
     ofxPanel m_uiTubesPatterns;
     ofxPanel m_uiMSA;
+    ofxPanel m_uiEasyOsc;
     
-    ofParameterGroup m_gpTubesPatterns;
-    ofParameterGroup m_gpMSA;
     
-    ofParameter<bool>       m_btPartsOn;
+    // OSC
+    ofParameterGroup     m_gpEasyOsc;
     
-    ofParameterGroup     m_gpTubes;
-    ofParameter<bool>       m_btRaysOn;
-    ofParameter<bool>       m_btTraitsOn;
-    
-    ofParameter<float>  m_slRestartIntensity;
-    ofParameter<float>  m_slTubeDelay;
-    ofParameter<float>  m_slTubePeriod;
-    ofParameter<float>  m_slRaysDelay;
-    ofParameter<float>  m_slRaysPeriod;
-    
-    // SPREADS SECTION ----------------------------------------------------------
-    ofParameterGroup     m_gpPatterns;
-    ofParameter<int>     m_slPatternFamily;
-    ofParameter<int>     m_slNumPattern;
-    ofParameter<float>   m_slSeqMinRate;
-    ofParameter<float>   m_slSeqMaxRate;
-    
-    ofParameter<int>  m_slModeTypo2;
-    
-    // Audio réaction ---------------------------------------------------
-    /*
-    ofParameterGroup     m_gpAudio;
-    ofParameter<bool>   m_btModeAudio;
-    ofParameter<float>  m_slBass_BangLevel;
-    ofParameter<float>  m_slMid_BangLevel;
-    ofParameter<float>  m_slHigh_BangLevel;
-    */
-    
-    // MSA ------------------
-    ofParameterGroup     m_gpMSA_Useful;
-    ofParameter<int>    m_slDrawMode;
-    ofParameter<float>  m_slViscocity;
-    ofParameter<float>  m_slColorDiffusion;
-    ofParameter<float>  m_slFadeSpeed;
-    ofParameter<float>  m_slDeltaT;
-    ofParameter<float>  m_slColorMult;
-    ofParameter<float>  m_slVelocityMult;
-    
-    ofParameterGroup        m_gpMSA_Useless;
-    ofParameter<int>        m_slfluidCellsX;
-    ofParameter<bool>       m_btResizeFluid;
-    ofParameter<int>        m_slSolverIterations;
-    ofParameter<bool>       m_btDoRGB;
-    ofParameter<bool>       m_btDoVorticityConfinement;
-    ofParameter<bool>       m_btDrawFluid;
-    ofParameter<bool>       m_btDrawParticles;
-    ofParameter<bool>       m_btWrapX;
-    ofParameter<bool>       m_btWrapY;
     
 };

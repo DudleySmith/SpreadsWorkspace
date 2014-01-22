@@ -5,6 +5,9 @@
       location = "container:"
       name = "Examples">
       <FileRef
+         location = "group:../../addons/ofxEasyOsc/ofxEasyOsc_ReceiverExample/ofxEasyOsc_ReceiverExample.xcodeproj">
+      </FileRef>
+      <FileRef
          location = "group:../../examples/gui/oscParametersSender/oscParametersSender.xcodeproj">
       </FileRef>
       <FileRef

@@ -222,12 +222,16 @@
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
 		EA4A8C2C188DA766005A8EC2 /* ofxLiveGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLiveGrabber.cpp; sourceTree = "<group>"; };
 		EA4A8C2D188DA766005A8EC2 /* ofxLiveGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLiveGrabber.h; sourceTree = "<group>"; };
-		EA4A8CA518906152005A8EC2 /* ofxEasyOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOsc.cpp; sourceTree = "<group>"; };
+		EA4A8CA518906152005A8EC2 /* ofxEasyOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOsc.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA4A8CA618906152005A8EC2 /* ofxEasyOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyOsc.h; sourceTree = "<group>"; };
 		EA4A8CA718906152005A8EC2 /* ofxEasyOscEventMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOscEventMessage.cpp; sourceTree = "<group>"; };
 		EA4A8CA818906152005A8EC2 /* ofxEasyOscEventMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyOscEventMessage.h; sourceTree = "<group>"; };
-		EA4A8CA918906152005A8EC2 /* ofxEasyOscReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOscReader.cpp; sourceTree = "<group>"; };
+		EA4A8CA918906152005A8EC2 /* ofxEasyOscReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOscReader.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA4A8CAA18906152005A8EC2 /* ofxEasyOscReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyOscReader.h; sourceTree = "<group>"; };
+		EA4A8CCF18907932005A8EC2 /* MSA.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = MSA.xml; path = bin/data/MSA.xml; sourceTree = "<group>"; };
+		EA4A8CD01890793D005A8EC2 /* myParts.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = myParts.xml; path = bin/data/myParts.xml; sourceTree = "<group>"; };
+		EA4A8CD118907961005A8EC2 /* Colors.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Colors.xml; path = bin/data/Colors.xml; sourceTree = "<group>"; };
+		EA4A8CD21890796B005A8EC2 /* Others.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = Others.xml; path = bin/data/Others.xml; sourceTree = "<group>"; };
 		EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadDisplay.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA9A7D8A17ABBEAE00E89067 /* ofdSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadDisplay.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAD53FBA1877156E001716BE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -385,7 +389,7 @@
 		EAEC92D418893A74002E631B /* ofxButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxButton.cpp; sourceTree = "<group>"; };
 		EAEC92D518893A74002E631B /* ofxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxButton.h; sourceTree = "<group>"; };
 		EAEC92D618893A74002E631B /* ofxGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGui.h; sourceTree = "<group>"; };
-		EAEC92D718893A74002E631B /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; };
+		EAEC92D718893A74002E631B /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxGuiGroup.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EAEC92D818893A74002E631B /* ofxGuiGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxGuiGroup.h; sourceTree = "<group>"; };
 		EAEC92D918893A74002E631B /* ofxLabel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLabel.cpp; sourceTree = "<group>"; };
 		EAEC92DA18893A74002E631B /* ofxLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLabel.h; sourceTree = "<group>"; };
@@ -754,6 +758,7 @@
 				E4EEC9E9138DF44700A80321 /* openFrameworks */,
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
+				EA4A8CCE18907920005A8EC2 /* XML */,
 				E4B69B5B0A3A1756003C02F2 /* Spreads_2_0_0Debug.app */,
 				EAEF248817AEA745002CE877 /* data */,
 			);
@@ -808,6 +813,17 @@
 				EA4A8CAA18906152005A8EC2 /* ofxEasyOscReader.h */,
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		EA4A8CCE18907920005A8EC2 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A8CD21890796B005A8EC2 /* Others.xml */,
+				EA4A8CD118907961005A8EC2 /* Colors.xml */,
+				EA4A8CD01890793D005A8EC2 /* myParts.xml */,
+				EA4A8CCF18907932005A8EC2 /* MSA.xml */,
+			);
+			name = XML;
 			sourceTree = "<group>";
 		};
 		EAD53FB91877156E001716BE /* ofxSyphon */ = {
