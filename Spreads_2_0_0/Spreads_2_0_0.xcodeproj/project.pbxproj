@@ -48,6 +48,7 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		EA4A8C2E188DA766005A8EC2 /* ofxLiveGrabber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA4A8C2C188DA766005A8EC2 /* ofxLiveGrabber.cpp */; };
 		EA9A7D8B17ABBEAE00E89067 /* ofdSpreadDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */; };
 		EAD53FEC187715F6001716BE /* Syphon.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EAD53FD91877156E001716BE /* Syphon.framework */; };
 		EAD540DD1878B4AA001716BE /* Syphon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAD5409B1878AF5C001716BE /* Syphon.framework */; };
@@ -219,6 +220,8 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EA4A8C2C188DA766005A8EC2 /* ofxLiveGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLiveGrabber.cpp; sourceTree = "<group>"; };
+		EA4A8C2D188DA766005A8EC2 /* ofxLiveGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLiveGrabber.h; sourceTree = "<group>"; };
 		EA9A7D8917ABBEAE00E89067 /* ofdSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofdSpreadDisplay.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA9A7D8A17ABBEAE00E89067 /* ofdSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofdSpreadDisplay.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		EAD53FBA1877156E001716BE /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -663,6 +666,7 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EA4A8C2B188DA766005A8EC2 /* ofxLiveGrabber */,
 				EAEC92D018893A74002E631B /* ofxGui */,
 				EAF721FA188801F800F27C19 /* ofxParticleWorld */,
 				EADF317217A92E4100B55A44 /* ofdAnimation */,
@@ -772,6 +776,16 @@
 				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
 			);
 			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+		EA4A8C2B188DA766005A8EC2 /* ofxLiveGrabber */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A8C2C188DA766005A8EC2 /* ofxLiveGrabber.cpp */,
+				EA4A8C2D188DA766005A8EC2 /* ofxLiveGrabber.h */,
+			);
+			name = ofxLiveGrabber;
+			path = ../../../addons/ofxLiveGrabber;
 			sourceTree = "<group>";
 		};
 		EAD53FB91877156E001716BE /* ofxSyphon */ = {
@@ -1531,6 +1545,7 @@
 				5864ad82e20f15536d054ea319473de3 /* ofxOscMessage.cpp in Sources */,
 				640279ee111671bd026cb0137d5b121e /* ofxOscReceiver.cpp in Sources */,
 				8f5205aef8861ef234f0651aba6be2ee /* ofxOscSender.cpp in Sources */,
+				EA4A8C2E188DA766005A8EC2 /* ofxLiveGrabber.cpp in Sources */,
 				ade367465d2a8ebad4c7a8d92a3ef718 /* IpEndpointName.cpp in Sources */,
 				67fe4c7b15c2f0478c8126c28fa6aad0 /* NetworkingUtils.cpp in Sources */,
 				510cafe035e576a4e1502d52c11243bb /* UdpSocket.cpp in Sources */,

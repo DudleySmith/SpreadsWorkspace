@@ -17,6 +17,7 @@
 
 #include "ofxColorSet.h"
 #include "ofdOsc.h"
+#include "ofxLiveGrabber.h"
 
 //#include "msaFluidParticlesApp.h"
 //#include "ofdFx.h" // Removed fx because of syphon + Resolume
@@ -81,6 +82,9 @@ private:
     
     // OSC ----------------------------------------------
     ofdOsc m_oOsc;
+    ofxOscLiveGrabberParameterSync m_oLiveGrabberColors;
+    ofxOscLiveGrabberParameterSync m_oLiveGrabberParts;
+    ofxOscLiveGrabberParameterSync m_oLiveGrabberOthers;
     void updateOSC();
     
 private:
@@ -92,16 +96,17 @@ private:
     // GUI -------------------------------------------------
     // -------------------------------------------------
     
-    ofxPanel            m_uiColors;
-    ofParameterGroup    m_gpColors;
+    ofxPanel m_uiColors;
+    ofxPanel m_uiParts;
+    ofxPanel m_uiTubesPatterns;
+    ofxPanel m_uiMSA;
     
-    ofxPanel             m_uiGen;
-    ofParameterGroup     m_gpGen;
+    ofParameterGroup m_gpTubesPatterns;
+    ofParameterGroup m_gpMSA;
     
-    ofParameterGroup         m_gpParts;
-    ofParameter<bool>        m_btPartsOn;
+    ofParameter<bool>       m_btPartsOn;
     
-    ofParameterGroup        m_gpTubes;
+    ofParameterGroup     m_gpTubes;
     ofParameter<bool>       m_btRaysOn;
     ofParameter<bool>       m_btTraitsOn;
     
@@ -112,7 +117,7 @@ private:
     ofParameter<float>  m_slRaysPeriod;
     
     // SPREADS SECTION ----------------------------------------------------------
-    ofParameterGroup     m_gpSpreads;
+    ofParameterGroup     m_gpPatterns;
     ofParameter<int>     m_slPatternFamily;
     ofParameter<int>     m_slNumPattern;
     ofParameter<float>   m_slSeqMinRate;
@@ -121,16 +126,15 @@ private:
     ofParameter<int>  m_slModeTypo2;
     
     // Audio réaction ---------------------------------------------------
+    /*
     ofParameterGroup     m_gpAudio;
     ofParameter<bool>   m_btModeAudio;
     ofParameter<float>  m_slBass_BangLevel;
     ofParameter<float>  m_slMid_BangLevel;
     ofParameter<float>  m_slHigh_BangLevel;
+    */
     
     // MSA ------------------
-    ofxPanel            m_uiMsa;
-    ofParameterGroup     m_gpMsa;
-    
     ofParameterGroup     m_gpMSA_Useful;
     ofParameter<int>    m_slDrawMode;
     ofParameter<float>  m_slViscocity;

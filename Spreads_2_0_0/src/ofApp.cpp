@@ -24,7 +24,7 @@ void ofApp::setup()
     // MIDI Links -----------------------------------------
     //    m_trace.go("Setup MIDI");
     // OSC ------------------------------------------------
-    m_oOsc.setup();
+//    m_oOsc.setup();
     m_trace.go("Setup OSC");
     
     setupOSC();
@@ -77,86 +77,103 @@ void ofApp::setupGUI(){
     modeMSA[4] = "Motion";
     modeMSA[5] = "DrawCount";
     
-    // PARTICLES SECTION ----------------------------------------------------------
-    // TODO : replace with ofxParticleWorld GUI
-    m_gpParts.setName("Parts");
-    m_gpParts.add(m_btPartsOn.set("ParticulesOn", mOut_vars.mI_particulesOn));
-    m_gpGen.add(m_gpParts);
-    
     // TUBES ---------------------------------------------------------------------
     m_gpTubes.setName("Tubes");
-    m_gpTubes.add(m_btRaysOn.set("raysOn", mOut_vars.mI_raysOn));
-    m_gpTubes.add(m_btTraitsOn.set("traitsOn", mOut_vars.mI_traitsOn));
-    m_gpTubes.add(m_slRestartIntensity.set("restartIntensity", mOut_vars.mI_restartIntensity, 0, 255));
-    m_gpTubes.add(m_slTubeDelay.set("TubeDelay", mOut_vars.mI_tubeDelay, mx_minTubeDelay, mx_maxTubeDelay));
-    m_gpTubes.add(m_slTubePeriod.set("Tube Period", mOut_vars.mI_tubePeriod, mx_minTubePeriod,  mx_maxTubePeriod));
-    m_gpTubes.add(m_slRaysDelay.set("Rays Delay", mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay));
-    m_gpTubes.add(m_slRaysPeriod.set("Rays Period", mOut_vars.mI_raysPeriod, mx_minRaysPeriod, mx_maxRaysPeriod));
-    m_gpGen.add(m_gpTubes);
+    m_gpTubes.add(m_btRaysOn.set("RaysOn", mOut_vars.mI_raysOn));
+    m_gpTubes.add(m_btTraitsOn.set("TraitsOn", mOut_vars.mI_traitsOn));
+    m_gpTubes.add(m_slRestartIntensity.set("RestartIntensity", mOut_vars.mI_restartIntensity, 0, 255));
+    m_gpTubes.add(m_slTubeDelay.set("TubesDelay", mOut_vars.mI_tubeDelay, mx_minTubeDelay, mx_maxTubeDelay));
+    m_gpTubes.add(m_slTubePeriod.set("TubesPeriod", mOut_vars.mI_tubePeriod, mx_minTubePeriod,  mx_maxTubePeriod));
+    m_gpTubes.add(m_slRaysDelay.set("RaysDelay", mOut_vars.mI_raysDelay, mx_minRaysDelay, mx_maxRaysDelay));
+    m_gpTubes.add(m_slRaysPeriod.set("RaysPeriod", mOut_vars.mI_raysPeriod, mx_minRaysPeriod, mx_maxRaysPeriod));
+    m_gpTubesPatterns.add(m_gpTubes);
     
     // SPREADS SECTION ----------------------------------------------------------
-    m_gpSpreads.setName("Spreads");
-    m_gpSpreads.add(m_slPatternFamily.set("Pattern Family", mOut_vars.mI_numFamily, 0 , 20));
-    m_gpSpreads.add(m_slNumPattern.set("Num Pattern", mOut_vars.mI_numPattern, 0 , 11));
-    m_gpSpreads.add(m_slSeqMinRate.set("seqMinRate", mOut_vars.mI_seqMinRate, 0, 1));
-    m_gpSpreads.add(m_slSeqMaxRate.set("seqMaxRate", mOut_vars.mI_seqMaxRate, 0, 1));
-    m_gpSpreads.add(m_slModeTypo2.set("modeTypo2", mOut_vars.mI_modeSeq, 0, 3));
+    m_gpPatterns.setName("Patterns");
+    m_gpPatterns.add(m_slPatternFamily.set("PatternFamily", mOut_vars.mI_numFamily, 0 , 20));
+    m_gpPatterns.add(m_slNumPattern.set("NumPattern", mOut_vars.mI_numPattern, 0 , 11));
+    m_gpPatterns.add(m_slSeqMinRate.set("SeqMinRate", mOut_vars.mI_seqMinRate, 0, 1));
+    m_gpPatterns.add(m_slSeqMaxRate.set("SeqMaxRate", mOut_vars.mI_seqMaxRate, 0, 1));
+    m_gpPatterns.add(m_slModeTypo2.set("ModeTypo", mOut_vars.mI_modeSeq, 0, 3));
     // TODO : ajouter un label
-    m_gpGen.add(m_gpSpreads);
+    m_gpTubesPatterns.add(m_gpPatterns);
+    
+//    m_uiOthers.setup(m_gpGen);
     
     
     // Audio réaction ---------------------------------------------------
+    /*
     m_gpAudio.setName("Audio");
     m_gpAudio.add(m_btModeAudio.set("mode Audio", mOut_vars.mI_AudioR_mode));
     m_gpAudio.add(m_slBass_BangLevel.set("Bass_BangLevel", mOut_vars.mI_Bass_BangLevel, 0, 1));
     m_gpAudio.add(m_slMid_BangLevel.set("Mid_BangLevel", mOut_vars.mI_Mid_BangLevel, 0, 1));
     m_gpAudio.add(m_slHigh_BangLevel.set("High_BangLevel", mOut_vars.mI_High_BangLevel, 0, 1));
     m_gpGen.add(m_gpAudio);
+    */
     
     // MSA Useful ---------------------------------------------------------
     m_gpMSA_Useful.setName("MSAUseful");
     // TODO : Add Label
-    m_gpMSA_Useful.add(m_slDrawMode.set("drawMode"               , mOut_vars.mI_MSAmode, 0, 5));
-    m_gpMSA_Useful.add(m_slViscocity.set("viscocity"                , mOut_vars.mI_MSAfluidSolverViscocity, 0.0, max_viscosity));
-    m_gpMSA_Useful.add(m_slColorDiffusion.set("colorDiffusion"           , mOut_vars.mI_MSAfluidSolverColorDiffusion, 0.0, 0.0003));
-    m_gpMSA_Useful.add(m_slFadeSpeed.set("fadeSpeed"                , mOut_vars.mI_MSAfluidSolverFadeSpeed, 0.0, 0.1));
-    m_gpMSA_Useful.add(m_slDeltaT.set("deltaT"                   , mOut_vars.mI_MSAfluidSolverDeltaT, 0.1, 5));
-    m_gpMSA_Useful.add(m_slColorMult.set("colorMult"                , mOut_vars.mI_MSAcolorMult, 0, 100));
-    m_gpMSA_Useful.add(m_slVelocityMult.set("velocityMult"             , mOut_vars.mI_MSAvelocityMult, 0, 100));
-    m_gpMsa.add(m_gpMSA_Useful);
+    m_gpMSA_Useful.add(m_slDrawMode.set("DrawMode", mOut_vars.mI_MSAmode, 0, 5));
+    m_gpMSA_Useful.add(m_slViscocity.set("Viscocity", mOut_vars.mI_MSAfluidSolverViscocity, 0.0, max_viscosity));
+    m_gpMSA_Useful.add(m_slColorDiffusion.set("ColorDiffusion", mOut_vars.mI_MSAfluidSolverColorDiffusion, 0.0, 0.0003));
+    m_gpMSA_Useful.add(m_slFadeSpeed.set("FadeSpeed", mOut_vars.mI_MSAfluidSolverFadeSpeed, 0.0, 0.1));
+    m_gpMSA_Useful.add(m_slDeltaT.set("DeltaT", mOut_vars.mI_MSAfluidSolverDeltaT, 0.1, 5));
+    m_gpMSA_Useful.add(m_slColorMult.set("ColorMult", mOut_vars.mI_MSAcolorMult, 0, 100));
+    m_gpMSA_Useful.add(m_slVelocityMult.set("VelocityMult", mOut_vars.mI_MSAvelocityMult, 0, 100));
+    m_gpMSA.add(m_gpMSA_Useful);
     
     // PAGE 3 : AUDIO + MSA parameters
     m_gpMSA_Useless.setName("MSAUseless");
-    m_gpMSA_Useless.add(m_slfluidCellsX.set("fluidCellsX"              , mOut_vars.mI_MSAfluidCellsX, 20, 400));
-    m_gpMSA_Useless.add(m_btResizeFluid.set("resizeFluid"              , mOut_vars.mI_MSAResizeFluid));
-    m_gpMSA_Useless.add(m_slSolverIterations.set("solverIterations"         , mOut_vars.mI_MSAfluidSolverSolverIterations, 1, 50));
-    m_gpMSA_Useless.add(m_btDoRGB.set("doRGB"                    , mOut_vars.mI_MSAdoRGB));
-    m_gpMSA_Useless.add(m_btDoVorticityConfinement.set("doVorticityConfinement"   , mOut_vars.mI_MSAdoVorticityConfinement));
-    m_gpMSA_Useless.add(m_btDrawFluid.set("drawFluid"                , mOut_vars.mI_MSAdrawFluid));
-    m_gpMSA_Useless.add(m_btDrawParticles.set("drawParticles"            , mOut_vars.mI_MSAdrawParticles));
-    m_gpMSA_Useless.add(m_btWrapX.set("wrapX"                    , mOut_vars.mI_MSAfluidSolverWrap_x));
-    m_gpMSA_Useless.add(m_btWrapY.set("wrapY"                    , mOut_vars.mI_MSAfluidSolverWrap_y));
-    m_gpMsa.add(m_gpMSA_Useless);
+    m_gpMSA_Useless.add(m_slfluidCellsX.set("FluidCellsX", mOut_vars.mI_MSAfluidCellsX, 20, 400));
+    m_gpMSA_Useless.add(m_btResizeFluid.set("ResizeFluid", mOut_vars.mI_MSAResizeFluid));
+    m_gpMSA_Useless.add(m_slSolverIterations.set("SolverIterations", mOut_vars.mI_MSAfluidSolverSolverIterations, 1, 50));
+    m_gpMSA_Useless.add(m_btDoRGB.set("DoRGB", mOut_vars.mI_MSAdoRGB));
+    m_gpMSA_Useless.add(m_btDoVorticityConfinement.set("DoVorticityConfinement", mOut_vars.mI_MSAdoVorticityConfinement));
+    m_gpMSA_Useless.add(m_btDrawFluid.set("DrawFluid", mOut_vars.mI_MSAdrawFluid));
+    m_gpMSA_Useless.add(m_btDrawParticles.set("DrawParticles", mOut_vars.mI_MSAdrawParticles));
+    m_gpMSA_Useless.add(m_btWrapX.set("WrapX", mOut_vars.mI_MSAfluidSolverWrap_x));
+    m_gpMSA_Useless.add(m_btWrapY.set("WrapY", mOut_vars.mI_MSAfluidSolverWrap_y));
+    m_gpMSA.add(m_gpMSA_Useless);
+    
+    
+    // PARTICLES SECTION ----------------------------------------------------------
+    m_uiParts.setup(m_spreadDisplay.m_oPartWorld.m_pgSets, "Parts.xml");
+    m_uiParts.add(m_btPartsOn.set("ParticulesOn", mOut_vars.mI_particulesOn));
     
     // COULEURS ---------------------------------------------------------------------
-    m_gpColors.add(mOut_vars.mI_ColorSet.m_oUI.m_gGroup);
-    m_uiColors.setup(m_gpColors);
     m_uiColors.setName("Colors");
+    m_uiColors.setup(mOut_vars.mI_ColorSet.m_oUI.m_gGroup, "Colors.xml");
+    m_uiColors.setPosition(10, 30);
+
     
-//    m_gpGen.add(m_gpColors);
+    // UIs - Setting names and places
     
-    // UIs
-    m_uiGen.setup(m_gpGen);
-    m_uiGen.setName("Generals");
+    m_gpTubesPatterns.setName("TubesPatterns");
+    m_uiTubesPatterns.setName("TubesPatterns");
+    m_uiTubesPatterns.setup(m_gpTubesPatterns, "TubesPatterns.xml");
     
-    m_uiMsa.setup(m_gpMsa);
-    m_uiMsa.setName("MSA");
+    m_gpMSA.setName("MSA");
+    m_uiMSA.setName("MSA");
+    m_uiMSA.setup(m_gpMSA, "MSA.xml");
     
-    // Setting places
-    m_uiGen.setPosition(10, 30);
-    m_uiMsa.setPosition(260, 30);
-    m_uiColors.setPosition(510, 30);
+    m_uiColors.loadFromFile("Colors.xml");
+    m_uiParts.loadFromFile("Parts.xml");
+    m_uiTubesPatterns.loadFromFile("TubesPatterns.xml");
+    m_uiMSA.loadFromFile("MSA.xml");
     
+    
+    int idxUI = 0;
+    m_uiColors.setPosition(10 + (idxUI++)*250, 30);
+    m_uiParts.setPosition(10 + (idxUI++)*250, 30);
+    m_uiTubesPatterns.setPosition(10 + (idxUI++)*250, 30);
+    m_uiMSA.setPosition(10 + (idxUI++)*250, 30);
+    
+    m_oLiveGrabberColors.setup((ofParameterGroup&)m_uiColors.getParameter(),9001,"localhost",9000);
+    m_oLiveGrabberParts.setup((ofParameterGroup&)m_uiParts.getParameter(),9002,"localhost",9000);
+    m_oLiveGrabberOthers.setup((ofParameterGroup&)m_uiTubesPatterns.getParameter(),9003,"localhost",9000);
+    m_oLiveGrabberOthers.setup((ofParameterGroup&)m_uiMSA.getParameter(),9004,"localhost",9000);
+
 }
 
 void ofApp::setupOSC(){
@@ -257,7 +274,10 @@ void ofApp::setupOSC(){
 
 void ofApp::updateOSC(){
     
-    m_oOsc.update();
+    //    m_oOsc.update();
+    m_oLiveGrabberColors.update();
+    m_oLiveGrabberOthers.update();
+    m_oLiveGrabberParts.update();
     mOut_vars.m_messages = m_oOsc;
     
 }
@@ -302,9 +322,10 @@ void    ofApp::savePresetsAs(){
 
 void ofApp::draw(){
     // Dessins des contrôles
-    m_uiGen.draw();
-    m_uiMsa.draw();
     m_uiColors.draw();
+    m_uiMSA.draw();
+    m_uiTubesPatterns.draw();
+    m_uiParts.draw();
     
     // Affichage des messages de fonctionnement
     ofPushStyle();
