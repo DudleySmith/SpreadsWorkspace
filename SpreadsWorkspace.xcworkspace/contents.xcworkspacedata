@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <FileRef
+      location = "group:Spreads_2_0_0/bin/data/OscEventsSettings.xml">
+   </FileRef>
    <Group
       location = "container:"
       name = "Examples">

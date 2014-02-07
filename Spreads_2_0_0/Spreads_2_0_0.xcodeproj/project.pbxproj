@@ -220,6 +220,7 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EA177E60189144CD00803823 /* OscEventsSettings.xml */ = {isa = PBXFileReference; lastKnownFileType = file; name = OscEventsSettings.xml; path = bin/data/OscEventsSettings.xml; sourceTree = "<group>"; };
 		EA4A8C2C188DA766005A8EC2 /* ofxLiveGrabber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxLiveGrabber.cpp; sourceTree = "<group>"; };
 		EA4A8C2D188DA766005A8EC2 /* ofxLiveGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxLiveGrabber.h; sourceTree = "<group>"; };
 		EA4A8CA518906152005A8EC2 /* ofxEasyOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOsc.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
@@ -818,6 +819,7 @@
 		EA4A8CCE18907920005A8EC2 /* XML */ = {
 			isa = PBXGroup;
 			children = (
+				EA177E60189144CD00803823 /* OscEventsSettings.xml */,
 				EA4A8CD21890796B005A8EC2 /* Others.xml */,
 				EA4A8CD118907961005A8EC2 /* Colors.xml */,
 				EA4A8CD01890793D005A8EC2 /* myParts.xml */,
