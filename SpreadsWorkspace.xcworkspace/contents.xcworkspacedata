@@ -2,40 +2,43 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Spreads_2_0_0/bin/data/OscEventsSettings.xml">
+      location = "group:Spreads_2_0_2/Spreads 2_0_2.xcodeproj">
    </FileRef>
    <Group
       location = "container:"
       name = "Examples">
       <FileRef
-         location = "group:../../addons/ofxEasyOsc/ofxEasyOsc_ReceiverExample/ofxEasyOsc_ReceiverExample.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/gui/oscParametersSender/oscParametersSender.xcodeproj">
-      </FileRef>
-      <FileRef
-         location = "group:../../examples/gui/oscParametersReceiver/oscParametersReceiver.xcodeproj">
+         location = "group:../myApps/firmataExample/firmataExample.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:../../addons/ofxColorSet/example_ofxColorSet/example_ofxColorSet.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
-      </FileRef>
-      <FileRef
          location = "group:../../addons/ofxParticleWorld/exampleOfxParticleWorld/exampleOfxParticleWorld.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../../examples/math/particlesExample/particlesExample.xcodeproj">
+         location = "group:../../addons/ofxEasyOsc/ofxEasyOsc_ReceiverExample/ofxEasyOsc_ReceiverExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxFenster/example/ofxFensterExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../addons/ofxMyArduino/ofxMyArduino_Example/ofxMyArduino_Example.xcodeproj">
       </FileRef>
       <FileRef
          location = "group:../../addons/ofxSyphon/example-Basic/ofxSyphonExample.xcodeproj">
       </FileRef>
       <FileRef
-         location = "group:../../addons/ofxFenster/example/ofxFensterExample.xcodeproj">
+         location = "group:../../examples/gui/oscParametersReceiver/oscParametersReceiver.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/gui/oscParametersSender/oscParametersSender.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/gui/parameterGroupExample/parameterGroupExample.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:../../examples/math/particlesExample/particlesExample.xcodeproj">
       </FileRef>
    </Group>
-   <FileRef
-      location = "container:Spreads_2_0_0/Spreads_2_0_0.xcodeproj">
-   </FileRef>
 </Workspace>

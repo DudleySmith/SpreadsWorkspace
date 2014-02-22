@@ -1,0 +1,16 @@
+ofxOsc
+ofxVectorGraphics
+ofxXmlSettings
+ofxColorSet
+ofxEasyOsc
+ofxFenster
+ofxLiveGrabber
+ofxMSACore
+ofxMSAFluid
+ofxMSAInteractiveObject
+ofxMSAObjCPointer
+ofxMSAPhysics
+ofxMSATimer
+ofxParticleWorld
+ofxSpreads
+ofxSyphon

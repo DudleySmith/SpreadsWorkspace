@@ -5,15 +5,18 @@ void ofApp::setup()
 {
     ofSetLogLevel(OF_LOG_VERBOSE);
     
-    ofSetWindowTitle("Spreads : Interface");
     createDisplay();
+    
+    // Display Settings --------------------------------
+    ofSetWindowTitle("Spreads : Interface");
+    ofSetWindowShape(m_oSpreadDisplay.m_slWidthDisplay, m_oSpreadDisplay.m_slHeightDisplay);
     ofSetBackgroundAuto(true);
     ofSetFrameRate(60);
     
     // COLORS -------------------------
     // Load colors
     // TODO : ColorSet
-    m_spreadDisplay.m_oColorSet.setup("colorSets.xml");
+    m_oSpreadDisplay.m_oColorSet.setup("colorSets.xml");
     
     // GUI Interface -----------------------------------------
     ofLogNotice() << ("Setup GUI");
@@ -24,48 +27,66 @@ void ofApp::setup()
     
     setupOSC();
     
+    m_oSpreadDisplay.m_oColorSet.m_oUI.setCurrentSetIdx(1);
+    m_oSpreadDisplay.m_oColorSet.m_oUI.setChange(true);
+    
 }
 
 
 void ofApp::createDisplay(){
     //setup of fensterListener does not get called automatically yet
-    ofxFensterManager::get()->setupWindow(&m_spreadDisplay);
+    ofxFensterManager::get()->setupWindow(&m_oSpreadDisplay, WindowWidth, WindowHeight);
 }
 
 void ofApp::setupGUI(){
     
     // PARTICLES SECTION ----------------------------------------------------------
-    m_spreadDisplay.m_oPartWorld.m_pgSets.setName("MyParts");
-    m_uiParts.setup(m_spreadDisplay.m_oPartWorld.m_pgSets, "XML/MyParts.xml");
+    m_oSpreadDisplay.m_oPartWorld.m_pgSets.setName("MyParts");
+    m_uiParts.setup(m_oSpreadDisplay.m_oPartWorld.m_pgSets, "XML/MyParts.xml");
     
     // COULEURS ---------------------------------------------------------------------
     m_uiColors.setName("Colors");
-    m_uiColors.setup(m_spreadDisplay.m_oColorSet.m_oUI.m_gGroup, "XML/Colors.xml");
+    m_uiColors.setup(m_oSpreadDisplay.m_oColorSet.m_oUI.m_gGroup, "XML/Colors.xml");
     m_uiColors.setPosition(10, 30);
     
     // UIs - Setting names and places
     m_uiTubesPatterns.setName("TubesPatterns");
-    m_uiTubesPatterns.setup(m_spreadDisplay.m_gpTubesPatterns, "XML/TubesPatterns.xml");
+    m_uiTubesPatterns.setup(m_oSpreadDisplay.m_gpTubesPatterns, "XML/TubesPatterns.xml");
+    
+    m_uiArduino.setup(m_oSpreadDisplay.m_oArduinoServer.m_gpArduino, "XML/MyArduino.xml");
+    m_uiArduino.loadFromFile("XML/MyArduino.xml");
     
     // MSA - Blurred particles
     m_uiMSA.setName("MSA");
-    m_uiMSA.setup(m_spreadDisplay.m_gpMSA, "XML/MSA.xml");
+    m_uiMSA.setup(m_oSpreadDisplay.m_gpMSA, "XML/MSA.xml");
+    
+    // Display
+    m_uiDisplay.setName("Diplay");
+    m_uiDisplay.setup(m_oSpreadDisplay.m_gpDisplay, "XML/Display.xml");
+    
     
     // OSC Parameters
-    m_spreadDisplay.m_oOscEvents.loadParameters();
-    m_uiEasyOsc.setup(m_spreadDisplay.m_oOscEvents.getSettings(), "XML/OscEventsSettings.xml");
+    m_oSpreadDisplay.m_oOscEventsOnOff.loadParameters("OscOnOff");
+    m_uiEasyOscOnOff.setup(m_oSpreadDisplay.m_oOscEventsOnOff.getSettings(), "XML/OscEventsOnOffSettings.xml");
+    
+    // OSC Parameters
+    m_oSpreadDisplay.m_oOscEventsFades.loadParameters("Fades");
+    m_uiEasyOscFades.setup(m_oSpreadDisplay.m_oOscEventsFades.getSettings(), "XML/OscEventsFadesSettings.xml");
     
     // Others UI features
     m_uiOthers.setup();
     m_uiOthers.setName("Others");
-    m_uiOthers.add(m_slSetLogLevel.setup("Set Log Level", 0, 0, 3));
+    m_uiOthers.add(m_slSetLogLevel.setup("Set Log Level", 3, 0, 3));
     m_uiOthers.add(m_lbGetLogLevel.setup("Log", "Log Level"));
     
     //m_uiColors.loadFromFile("Colors.xml");
     m_uiParts.loadFromFile("XML/MyParts.xml");
     m_uiTubesPatterns.loadFromFile("XML/TubesPatterns.xml");
     m_uiMSA.loadFromFile("XML/MSA.xml");
-    m_uiEasyOsc.loadFromFile("XML/OscEventsSettings.xml");
+    m_uiEasyOscOnOff.loadFromFile("XML/OscEventsOnOffSettings.xml");
+    m_uiEasyOscFades.loadFromFile("XML/OscEventsFadesSettings.xml");
+    m_uiOthers.loadFromFile("XML/Others.xml");
+    m_uiDisplay.loadFromFile("XML/Display.xml");
     
     int idxUI = 0;
     m_uiColors.setPosition(10 + (idxUI++)*250, 30);
@@ -73,15 +94,18 @@ void ofApp::setupGUI(){
     m_uiTubesPatterns.setPosition(10 + (idxUI++)*250, 30);
     m_uiMSA.setPosition(10 + (idxUI++)*250, 30);
     
-    m_uiEasyOsc.setPosition(10 + (idxUI++)*250, 30);
-    m_uiOthers.setPosition(10 + (idxUI-1)*250, 460);
+    m_uiEasyOscOnOff.setPosition(10 + (idxUI++)*250, 30);
+    m_uiEasyOscFades.setPosition(10 + (idxUI-1)*250, 180);
+    m_uiDisplay.setPosition(10 + (idxUI-1)*250, 360);
+    m_uiOthers.setPosition(10 + (idxUI-1)*250, 560);
     
     
 }
 
 void ofApp::setupOSC(){
     
-    m_spreadDisplay.m_oOscEvents.setup(EASYOSC_IN, "OscEventsSettings.xml");
+    m_oSpreadDisplay.m_oOscEventsOnOff.setup(EASYOSC_IN);
+    m_oSpreadDisplay.m_oOscEventsFades.setup(EASYOSC_IN);
     
     m_oLiveGrabberColors.setup((ofParameterGroup&)m_uiColors.getParameter(),9001,"localhost",9000);
     m_oLiveGrabberParts.setup((ofParameterGroup&)m_uiParts.getParameter(),9002,"localhost",9000);
@@ -97,18 +121,25 @@ void ofApp::updateOSC(){
     m_oLiveGrabberMSA.update();
     m_oLiveGrabberParts.update();
     
-    m_spreadDisplay.m_oOscEvents.update();
-        
+    m_oSpreadDisplay.m_oOscEventsOnOff.update();
+    m_oSpreadDisplay.m_oOscEventsFades.update();
+    
 }
 
 void ofApp::draw(){
+    
+    int curWidth = ofGetWidth();
+    int curHeight = ofGetHeight();
+    
     // Dessins des contrôles
     m_uiColors.draw();
     m_uiMSA.draw();
     m_uiTubesPatterns.draw();
     m_uiParts.draw();
-    m_uiEasyOsc.draw();
+    m_uiEasyOscOnOff.draw();
+    m_uiEasyOscFades.draw();
     m_uiOthers.draw();
+    m_uiDisplay.draw();
     
     // Affichage des messages de fonctionnement
     ofPushStyle();
@@ -117,6 +148,7 @@ void ofApp::draw(){
     ofDrawBitmapString(m_strTrace, 20, 20);
     
     ofPopStyle();
+
     
     /*
      //ofDrawBitmapString("Controls", 0.5*ofGetWidth(), 0.5*ofGetHeight());
@@ -142,7 +174,7 @@ void ofApp::update(){
     // OSC, now !!!!!!!!!!!!!!!!!!!!!
     updateOSC();
     
-    m_strTrace = m_spreadDisplay.m_strTrace;
+    m_strTrace = m_oSpreadDisplay.m_strTrace;
     
     switch (m_slSetLogLevel) {
         case 0:
@@ -172,16 +204,14 @@ void ofApp::update(){
 }
 
 void ofApp::keyPressed(int key){
-    m_spreadDisplay.keyPressed(key);
+    m_oSpreadDisplay.keyPressed(key);
 }
 
 void ofApp::keyReleased(int key){
-    m_spreadDisplay.keyReleased(key);
+    m_oSpreadDisplay.keyReleased(key);
 }
 
 void ofApp::windowResized(int w, int h){
-    //
-    m_spreadDisplay.windowResized(w, h);
 }
 
 /*

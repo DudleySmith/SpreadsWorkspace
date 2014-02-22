@@ -33,10 +33,21 @@
 		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
 		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
 		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		EA7186F318A502F00061ABB9 /* ofxMyArduinoClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7186EF18A502F00061ABB9 /* ofxMyArduinoClient.cpp */; };
+		EA7186F418A502F00061ABB9 /* ofxMyArduinoCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7186F018A502F00061ABB9 /* ofxMyArduinoCommon.cpp */; };
+		EA7186F518A502F00061ABB9 /* ofxMyArduinoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA7186F218A502F00061ABB9 /* ofxMyArduinoServer.cpp */; };
+		EA71876818A5560A0061ABB9 /* ofxPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875318A5560A0061ABB9 /* ofxPattern.cpp */; };
+		EA71876918A5560A0061ABB9 /* ofxSpreadDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875518A5560A0061ABB9 /* ofxSpreadDisplay.cpp */; };
+		EA71876A18A5560A0061ABB9 /* ofxSpreadElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875718A5560A0061ABB9 /* ofxSpreadElement.cpp */; };
+		EA71876B18A5560A0061ABB9 /* ofxSpreadFullShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875918A5560A0061ABB9 /* ofxSpreadFullShape.cpp */; };
+		EA71876C18A5560A0061ABB9 /* ofxSpreadPatterns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875B18A5560A0061ABB9 /* ofxSpreadPatterns.cpp */; };
+		EA71876D18A5560A0061ABB9 /* ofxSpreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875D18A5560A0061ABB9 /* ofxSpreads.cpp */; };
+		EA71876E18A5560A0061ABB9 /* ofxSpreads_GenSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71875F18A5560A0061ABB9 /* ofxSpreads_GenSettings.cpp */; };
+		EA71876F18A5560A0061ABB9 /* ofxSpreads_InitShapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71876118A5560A0061ABB9 /* ofxSpreads_InitShapes.cpp */; };
+		EA71877018A5560A0061ABB9 /* ofxSpreads_XMLsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71876218A5560A0061ABB9 /* ofxSpreads_XMLsettings.cpp */; };
+		EA71877118A5560A0061ABB9 /* ofxSpreadTube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71876418A5560A0061ABB9 /* ofxSpreadTube.cpp */; };
+		EA71877218A5560A0061ABB9 /* ofxSpreadTypo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA71876618A5560A0061ABB9 /* ofxSpreadTypo.cpp */; };
 		EA738CCD1897D98A00FDF1D3 /* ofdAnimation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B091897D98800FDF1D3 /* ofdAnimation.cpp */; };
-		EA738CCE1897D98A00FDF1D3 /* ofdArduinoClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B0D1897D98800FDF1D3 /* ofdArduinoClient.cpp */; };
-		EA738CCF1897D98A00FDF1D3 /* ofdArduinoCommon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B0E1897D98800FDF1D3 /* ofdArduinoCommon.cpp */; };
-		EA738CD01897D98A00FDF1D3 /* ofdArduinoServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B101897D98800FDF1D3 /* ofdArduinoServer.cpp */; };
 		EA738CD11897D98A00FDF1D3 /* msaFluidParticlesApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B121897D98800FDF1D3 /* msaFluidParticlesApp.cpp */; };
 		EA738CD21897D98A00FDF1D3 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B141897D98800FDF1D3 /* Particle.cpp */; };
 		EA738CD31897D98A00FDF1D3 /* ParticleSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738B161897D98800FDF1D3 /* ParticleSystem.cpp */; };
@@ -81,17 +92,6 @@
 		EA738D191897D98A00FDF1D3 /* ofxEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C5D1897D98A00FDF1D3 /* ofxEmitter.cpp */; };
 		EA738D1A1897D98A00FDF1D3 /* ofxParticle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C5F1897D98A00FDF1D3 /* ofxParticle.cpp */; };
 		EA738D1B1897D98A00FDF1D3 /* ofxParticleWorld.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C611897D98A00FDF1D3 /* ofxParticleWorld.cpp */; };
-		EA738D1C1897D98A00FDF1D3 /* ofxPattern.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C651897D98A00FDF1D3 /* ofxPattern.cpp */; };
-		EA738D1E1897D98A00FDF1D3 /* ofxSpreadDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C691897D98A00FDF1D3 /* ofxSpreadDisplay.cpp */; };
-		EA738D1F1897D98A00FDF1D3 /* ofxSpreadElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C6B1897D98A00FDF1D3 /* ofxSpreadElement.cpp */; };
-		EA738D201897D98A00FDF1D3 /* ofxSpreadFullShape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C6D1897D98A00FDF1D3 /* ofxSpreadFullShape.cpp */; };
-		EA738D231897D98A00FDF1D3 /* ofxSpreadPatterns.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C741897D98A00FDF1D3 /* ofxSpreadPatterns.cpp */; };
-		EA738D241897D98A00FDF1D3 /* ofxSpreads.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C761897D98A00FDF1D3 /* ofxSpreads.cpp */; };
-		EA738D251897D98A00FDF1D3 /* ofxSpreads_GenSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C781897D98A00FDF1D3 /* ofxSpreads_GenSettings.cpp */; };
-		EA738D261897D98A00FDF1D3 /* ofxSpreads_InitShapes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C7A1897D98A00FDF1D3 /* ofxSpreads_InitShapes.cpp */; };
-		EA738D271897D98A00FDF1D3 /* ofxSpreads_XMLsettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C7B1897D98A00FDF1D3 /* ofxSpreads_XMLsettings.cpp */; };
-		EA738D291897D98A00FDF1D3 /* ofxSpreadTube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C7F1897D98A00FDF1D3 /* ofxSpreadTube.cpp */; };
-		EA738D2A1897D98A00FDF1D3 /* ofxSpreadTypo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C811897D98A00FDF1D3 /* ofxSpreadTypo.cpp */; };
 		EA738D2B1897D98A00FDF1D3 /* src_colors.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C871897D98A00FDF1D3 /* src_colors.cpp */; };
 		EA738D2C1897D98A00FDF1D3 /* svgtiny.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C881897D98A00FDF1D3 /* svgtiny.cpp */; };
 		EA738D2D1897D98A00FDF1D3 /* svgtiny_gradient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA738C8A1897D98A00FDF1D3 /* svgtiny_gradient.cpp */; };
@@ -195,13 +195,34 @@
 		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
 		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
 		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EA1A90FD18AD34AF00F587A1 /* MyArduino.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyArduino.xml; sourceTree = "<group>"; };
+		EA7186EE18A502F00061ABB9 /* ofxMyArduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 2; path = ofxMyArduino.h; sourceTree = "<group>"; };
+		EA7186EF18A502F00061ABB9 /* ofxMyArduinoClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxMyArduinoClient.cpp; sourceTree = "<group>"; };
+		EA7186F018A502F00061ABB9 /* ofxMyArduinoCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxMyArduinoCommon.cpp; sourceTree = "<group>"; };
+		EA7186F218A502F00061ABB9 /* ofxMyArduinoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 2; path = ofxMyArduinoServer.cpp; sourceTree = "<group>"; };
+		EA71875318A5560A0061ABB9 /* ofxPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPattern.cpp; sourceTree = "<group>"; };
+		EA71875418A5560A0061ABB9 /* ofxPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPattern.h; sourceTree = "<group>"; };
+		EA71875518A5560A0061ABB9 /* ofxSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadDisplay.cpp; sourceTree = "<group>"; };
+		EA71875618A5560A0061ABB9 /* ofxSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadDisplay.h; sourceTree = "<group>"; };
+		EA71875718A5560A0061ABB9 /* ofxSpreadElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadElement.cpp; sourceTree = "<group>"; };
+		EA71875818A5560A0061ABB9 /* ofxSpreadElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadElement.h; sourceTree = "<group>"; };
+		EA71875918A5560A0061ABB9 /* ofxSpreadFullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadFullShape.cpp; sourceTree = "<group>"; };
+		EA71875A18A5560A0061ABB9 /* ofxSpreadFullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadFullShape.h; sourceTree = "<group>"; };
+		EA71875B18A5560A0061ABB9 /* ofxSpreadPatterns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadPatterns.cpp; sourceTree = "<group>"; };
+		EA71875C18A5560A0061ABB9 /* ofxSpreadPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadPatterns.h; sourceTree = "<group>"; };
+		EA71875D18A5560A0061ABB9 /* ofxSpreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads.cpp; sourceTree = "<group>"; };
+		EA71875E18A5560A0061ABB9 /* ofxSpreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads.h; sourceTree = "<group>"; };
+		EA71875F18A5560A0061ABB9 /* ofxSpreads_GenSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_GenSettings.cpp; sourceTree = "<group>"; };
+		EA71876018A5560A0061ABB9 /* ofxSpreads_GenSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads_GenSettings.h; sourceTree = "<group>"; };
+		EA71876118A5560A0061ABB9 /* ofxSpreads_InitShapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_InitShapes.cpp; sourceTree = "<group>"; };
+		EA71876218A5560A0061ABB9 /* ofxSpreads_XMLsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_XMLsettings.cpp; sourceTree = "<group>"; };
+		EA71876318A5560A0061ABB9 /* ofxSpreads_XMLsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads_XMLsettings.h; sourceTree = "<group>"; };
+		EA71876418A5560A0061ABB9 /* ofxSpreadTube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadTube.cpp; sourceTree = "<group>"; };
+		EA71876518A5560A0061ABB9 /* ofxSpreadTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadTube.h; sourceTree = "<group>"; };
+		EA71876618A5560A0061ABB9 /* ofxSpreadTypo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadTypo.cpp; sourceTree = "<group>"; };
+		EA71876718A5560A0061ABB9 /* ofxSpreadTypo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadTypo.h; sourceTree = "<group>"; };
 		EA738B091897D98800FDF1D3 /* ofdAnimation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdAnimation.cpp; sourceTree = "<group>"; };
 		EA738B0A1897D98800FDF1D3 /* ofdAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdAnimation.h; sourceTree = "<group>"; };
-		EA738B0C1897D98800FDF1D3 /* ofdArduino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdArduino.h; sourceTree = "<group>"; };
-		EA738B0D1897D98800FDF1D3 /* ofdArduinoClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdArduinoClient.cpp; sourceTree = "<group>"; };
-		EA738B0E1897D98800FDF1D3 /* ofdArduinoCommon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdArduinoCommon.cpp; sourceTree = "<group>"; };
-		EA738B0F1897D98800FDF1D3 /* ofdArduinoCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdArduinoCommon.h; sourceTree = "<group>"; };
-		EA738B101897D98800FDF1D3 /* ofdArduinoServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdArduinoServer.cpp; sourceTree = "<group>"; };
 		EA738B121897D98800FDF1D3 /* msaFluidParticlesApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msaFluidParticlesApp.cpp; sourceTree = "<group>"; };
 		EA738B131897D98800FDF1D3 /* msaFluidParticlesApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = msaFluidParticlesApp.h; sourceTree = "<group>"; };
 		EA738B141897D98800FDF1D3 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
@@ -214,13 +235,13 @@
 		EA738B301897D98900FDF1D3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		EA738B321897D98900FDF1D3 /* ofxBasicColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxBasicColorSet.cpp; sourceTree = "<group>"; };
 		EA738B331897D98900FDF1D3 /* ofxBasicColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxBasicColorSet.h; sourceTree = "<group>"; };
-		EA738B341897D98900FDF1D3 /* ofxColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSet.cpp; sourceTree = "<group>"; };
+		EA738B341897D98900FDF1D3 /* ofxColorSet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSet.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA738B351897D98900FDF1D3 /* ofxColorSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSet.h; sourceTree = "<group>"; };
 		EA738B361897D98900FDF1D3 /* ofxColorSetAnimated.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSetAnimated.cpp; sourceTree = "<group>"; };
 		EA738B371897D98900FDF1D3 /* ofxColorSetAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSetAnimated.h; sourceTree = "<group>"; };
 		EA738B381897D98900FDF1D3 /* ofxColorSetUI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxColorSetUI.cpp; sourceTree = "<group>"; };
 		EA738B391897D98900FDF1D3 /* ofxColorSetUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxColorSetUI.h; sourceTree = "<group>"; };
-		EA738B681897D98900FDF1D3 /* ofxEasyOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOsc.cpp; sourceTree = "<group>"; };
+		EA738B681897D98900FDF1D3 /* ofxEasyOsc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOsc.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA738B691897D98900FDF1D3 /* ofxEasyOsc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyOsc.h; sourceTree = "<group>"; };
 		EA738B6A1897D98900FDF1D3 /* ofxEasyOscEventMessage.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEasyOscEventMessage.cpp; sourceTree = "<group>"; };
 		EA738B6B1897D98900FDF1D3 /* ofxEasyOscEventMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEasyOscEventMessage.h; sourceTree = "<group>"; };
@@ -340,32 +361,11 @@
 		EA738C5C1897D98A00FDF1D3 /* ofxConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxConstraint.h; sourceTree = "<group>"; };
 		EA738C5D1897D98A00FDF1D3 /* ofxEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxEmitter.cpp; sourceTree = "<group>"; };
 		EA738C5E1897D98A00FDF1D3 /* ofxEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxEmitter.h; sourceTree = "<group>"; };
-		EA738C5F1897D98A00FDF1D3 /* ofxParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle.cpp; sourceTree = "<group>"; };
+		EA738C5F1897D98A00FDF1D3 /* ofxParticle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticle.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		EA738C601897D98A00FDF1D3 /* ofxParticle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticle.h; sourceTree = "<group>"; };
 		EA738C611897D98A00FDF1D3 /* ofxParticleWorld.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxParticleWorld.cpp; sourceTree = "<group>"; };
 		EA738C621897D98A00FDF1D3 /* ofxParticleWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticleWorld.h; sourceTree = "<group>"; };
 		EA738C631897D98A00FDF1D3 /* ofxParticleWorldDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxParticleWorldDefine.h; sourceTree = "<group>"; };
-		EA738C651897D98A00FDF1D3 /* ofxPattern.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxPattern.cpp; sourceTree = "<group>"; };
-		EA738C661897D98A00FDF1D3 /* ofxPattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxPattern.h; sourceTree = "<group>"; };
-		EA738C691897D98A00FDF1D3 /* ofxSpreadDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadDisplay.cpp; sourceTree = "<group>"; };
-		EA738C6A1897D98A00FDF1D3 /* ofxSpreadDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadDisplay.h; sourceTree = "<group>"; };
-		EA738C6B1897D98A00FDF1D3 /* ofxSpreadElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadElement.cpp; sourceTree = "<group>"; };
-		EA738C6C1897D98A00FDF1D3 /* ofxSpreadElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadElement.h; sourceTree = "<group>"; };
-		EA738C6D1897D98A00FDF1D3 /* ofxSpreadFullShape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadFullShape.cpp; sourceTree = "<group>"; };
-		EA738C6E1897D98A00FDF1D3 /* ofxSpreadFullShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadFullShape.h; sourceTree = "<group>"; };
-		EA738C741897D98A00FDF1D3 /* ofxSpreadPatterns.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadPatterns.cpp; sourceTree = "<group>"; };
-		EA738C751897D98A00FDF1D3 /* ofxSpreadPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadPatterns.h; sourceTree = "<group>"; };
-		EA738C761897D98A00FDF1D3 /* ofxSpreads.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads.cpp; sourceTree = "<group>"; };
-		EA738C771897D98A00FDF1D3 /* ofxSpreads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads.h; sourceTree = "<group>"; };
-		EA738C781897D98A00FDF1D3 /* ofxSpreads_GenSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_GenSettings.cpp; sourceTree = "<group>"; };
-		EA738C791897D98A00FDF1D3 /* ofxSpreads_GenSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads_GenSettings.h; sourceTree = "<group>"; };
-		EA738C7A1897D98A00FDF1D3 /* ofxSpreads_InitShapes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_InitShapes.cpp; sourceTree = "<group>"; };
-		EA738C7B1897D98A00FDF1D3 /* ofxSpreads_XMLsettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreads_XMLsettings.cpp; sourceTree = "<group>"; };
-		EA738C7C1897D98A00FDF1D3 /* ofxSpreads_XMLsettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreads_XMLsettings.h; sourceTree = "<group>"; };
-		EA738C7F1897D98A00FDF1D3 /* ofxSpreadTube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadTube.cpp; sourceTree = "<group>"; };
-		EA738C801897D98A00FDF1D3 /* ofxSpreadTube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadTube.h; sourceTree = "<group>"; };
-		EA738C811897D98A00FDF1D3 /* ofxSpreadTypo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSpreadTypo.cpp; sourceTree = "<group>"; };
-		EA738C821897D98A00FDF1D3 /* ofxSpreadTypo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSpreadTypo.h; sourceTree = "<group>"; };
 		EA738C871897D98A00FDF1D3 /* src_colors.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = src_colors.cpp; sourceTree = "<group>"; };
 		EA738C881897D98A00FDF1D3 /* svgtiny.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = svgtiny.cpp; sourceTree = "<group>"; };
 		EA738C891897D98A00FDF1D3 /* svgtiny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = svgtiny.h; sourceTree = "<group>"; };
@@ -438,6 +438,17 @@
 		EA738D971897DA5F00FDF1D3 /* ofdRay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdRay.h; sourceTree = "<group>"; };
 		EA738D981897DA5F00FDF1D3 /* ofdRays.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofdRays.cpp; sourceTree = "<group>"; };
 		EA738D991897DA5F00FDF1D3 /* ofdRays.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofdRays.h; sourceTree = "<group>"; };
+		EA7C637D18B2383900A4250B /* colorSets.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = colorSets.xml; path = bin/data/colorSets.xml; sourceTree = SOURCE_ROOT; };
+		EAB7400218A1741500F0B846 /* Display.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Display.xml; sourceTree = "<group>"; };
+		EAB7400318A1741500F0B846 /* External.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = External.xml; sourceTree = "<group>"; };
+		EAB7400418A1741500F0B846 /* MSA.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MSA.xml; sourceTree = "<group>"; };
+		EAB7400518A1741500F0B846 /* MyParts.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyParts.xml; sourceTree = "<group>"; };
+		EAB7400618A1741500F0B846 /* ofdSpreads_GenSettings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ofdSpreads_GenSettings.xml; sourceTree = "<group>"; };
+		EAB7400718A1741500F0B846 /* OscEventsFadesSettings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OscEventsFadesSettings.xml; sourceTree = "<group>"; };
+		EAB7400818A1741500F0B846 /* OscEventsOnOffSettings.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = OscEventsOnOffSettings.xml; sourceTree = "<group>"; };
+		EAB7400918A1741500F0B846 /* Others.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Others.xml; sourceTree = "<group>"; };
+		EAB7400A18A1741500F0B846 /* Parts.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Parts.xml; sourceTree = "<group>"; };
+		EAB7400B18A1741500F0B846 /* TubesPatterns.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TubesPatterns.xml; sourceTree = "<group>"; };
 		FB624A517B9CA0BD44AA7137 /* ofxFensterCanvas.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; path = ofxFensterCanvas.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -483,7 +494,6 @@
 			isa = PBXGroup;
 			children = (
 				EA738B081897D98800FDF1D3 /* ofdAnimation */,
-				EA738B0B1897D98800FDF1D3 /* ofdArduino */,
 				EA738B111897D98800FDF1D3 /* ofdMSADemo */,
 				EA738D951897DA5F00FDF1D3 /* ofdRays */,
 				EA738B181897D98800FDF1D3 /* ofdTimer */,
@@ -498,6 +508,7 @@
 				EA738BE41897D98900FDF1D3 /* ofxMSAObjCPointer */,
 				EA738BF51897D98900FDF1D3 /* ofxMSAPhysics */,
 				EA738C0F1897D98900FDF1D3 /* ofxMSATimer */,
+				EA7186EC18A502F00061ABB9 /* ofxMyArduino */,
 				EA738C151897D98900FDF1D3 /* ofxOsc */,
 				EA738C401897D98900FDF1D3 /* ofxParticleWorld */,
 				EA738D541897D9B200FDF1D3 /* ofxSimpleGuiToo */,
@@ -586,6 +597,7 @@
 				BB4B014C10F69532006C3DED /* addons */,
 				E45BE5980E8CC70C009D7055 /* frameworks */,
 				E4B69B5B0A3A1756003C02F2 /* Spreads 2_0_2Debug.app */,
+				EAB7400118A1741500F0B846 /* XML */,
 			);
 			sourceTree = "<group>";
 		};
@@ -608,6 +620,54 @@
 			name = openFrameworks;
 			sourceTree = "<group>";
 		};
+		EA7186EC18A502F00061ABB9 /* ofxMyArduino */ = {
+			isa = PBXGroup;
+			children = (
+				EA7186ED18A502F00061ABB9 /* src */,
+			);
+			name = ofxMyArduino;
+			path = ../../../addons/ofxMyArduino;
+			sourceTree = "<group>";
+		};
+		EA7186ED18A502F00061ABB9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA7186EE18A502F00061ABB9 /* ofxMyArduino.h */,
+				EA7186EF18A502F00061ABB9 /* ofxMyArduinoClient.cpp */,
+				EA7186F018A502F00061ABB9 /* ofxMyArduinoCommon.cpp */,
+				EA7186F218A502F00061ABB9 /* ofxMyArduinoServer.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EA71875218A5560A0061ABB9 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EA71875318A5560A0061ABB9 /* ofxPattern.cpp */,
+				EA71875418A5560A0061ABB9 /* ofxPattern.h */,
+				EA71875518A5560A0061ABB9 /* ofxSpreadDisplay.cpp */,
+				EA71875618A5560A0061ABB9 /* ofxSpreadDisplay.h */,
+				EA71875718A5560A0061ABB9 /* ofxSpreadElement.cpp */,
+				EA71875818A5560A0061ABB9 /* ofxSpreadElement.h */,
+				EA71875918A5560A0061ABB9 /* ofxSpreadFullShape.cpp */,
+				EA71875A18A5560A0061ABB9 /* ofxSpreadFullShape.h */,
+				EA71875B18A5560A0061ABB9 /* ofxSpreadPatterns.cpp */,
+				EA71875C18A5560A0061ABB9 /* ofxSpreadPatterns.h */,
+				EA71875D18A5560A0061ABB9 /* ofxSpreads.cpp */,
+				EA71875E18A5560A0061ABB9 /* ofxSpreads.h */,
+				EA71875F18A5560A0061ABB9 /* ofxSpreads_GenSettings.cpp */,
+				EA71876018A5560A0061ABB9 /* ofxSpreads_GenSettings.h */,
+				EA71876118A5560A0061ABB9 /* ofxSpreads_InitShapes.cpp */,
+				EA71876218A5560A0061ABB9 /* ofxSpreads_XMLsettings.cpp */,
+				EA71876318A5560A0061ABB9 /* ofxSpreads_XMLsettings.h */,
+				EA71876418A5560A0061ABB9 /* ofxSpreadTube.cpp */,
+				EA71876518A5560A0061ABB9 /* ofxSpreadTube.h */,
+				EA71876618A5560A0061ABB9 /* ofxSpreadTypo.cpp */,
+				EA71876718A5560A0061ABB9 /* ofxSpreadTypo.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		EA738B081897D98800FDF1D3 /* ofdAnimation */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,19 +676,6 @@
 			);
 			name = ofdAnimation;
 			path = ../../../addons/ofdAnimation;
-			sourceTree = "<group>";
-		};
-		EA738B0B1897D98800FDF1D3 /* ofdArduino */ = {
-			isa = PBXGroup;
-			children = (
-				EA738B0C1897D98800FDF1D3 /* ofdArduino.h */,
-				EA738B0D1897D98800FDF1D3 /* ofdArduinoClient.cpp */,
-				EA738B0E1897D98800FDF1D3 /* ofdArduinoCommon.cpp */,
-				EA738B0F1897D98800FDF1D3 /* ofdArduinoCommon.h */,
-				EA738B101897D98800FDF1D3 /* ofdArduinoServer.cpp */,
-			);
-			name = ofdArduino;
-			path = ../../../addons/ofdArduino;
 			sourceTree = "<group>";
 		};
 		EA738B111897D98800FDF1D3 /* ofdMSADemo */ = {
@@ -1033,27 +1080,7 @@
 		EA738C641897D98A00FDF1D3 /* ofxSpreads */ = {
 			isa = PBXGroup;
 			children = (
-				EA738C651897D98A00FDF1D3 /* ofxPattern.cpp */,
-				EA738C661897D98A00FDF1D3 /* ofxPattern.h */,
-				EA738C691897D98A00FDF1D3 /* ofxSpreadDisplay.cpp */,
-				EA738C6A1897D98A00FDF1D3 /* ofxSpreadDisplay.h */,
-				EA738C6B1897D98A00FDF1D3 /* ofxSpreadElement.cpp */,
-				EA738C6C1897D98A00FDF1D3 /* ofxSpreadElement.h */,
-				EA738C6D1897D98A00FDF1D3 /* ofxSpreadFullShape.cpp */,
-				EA738C6E1897D98A00FDF1D3 /* ofxSpreadFullShape.h */,
-				EA738C741897D98A00FDF1D3 /* ofxSpreadPatterns.cpp */,
-				EA738C751897D98A00FDF1D3 /* ofxSpreadPatterns.h */,
-				EA738C761897D98A00FDF1D3 /* ofxSpreads.cpp */,
-				EA738C771897D98A00FDF1D3 /* ofxSpreads.h */,
-				EA738C781897D98A00FDF1D3 /* ofxSpreads_GenSettings.cpp */,
-				EA738C791897D98A00FDF1D3 /* ofxSpreads_GenSettings.h */,
-				EA738C7A1897D98A00FDF1D3 /* ofxSpreads_InitShapes.cpp */,
-				EA738C7B1897D98A00FDF1D3 /* ofxSpreads_XMLsettings.cpp */,
-				EA738C7C1897D98A00FDF1D3 /* ofxSpreads_XMLsettings.h */,
-				EA738C7F1897D98A00FDF1D3 /* ofxSpreadTube.cpp */,
-				EA738C801897D98A00FDF1D3 /* ofxSpreadTube.h */,
-				EA738C811897D98A00FDF1D3 /* ofxSpreadTypo.cpp */,
-				EA738C821897D98A00FDF1D3 /* ofxSpreadTypo.h */,
+				EA71875218A5560A0061ABB9 /* src */,
 			);
 			name = ofxSpreads;
 			path = ../../../addons/ofxSpreads;
@@ -1307,6 +1334,26 @@
 			path = ../../../addons/ofdRays;
 			sourceTree = "<group>";
 		};
+		EAB7400118A1741500F0B846 /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				EA7C637D18B2383900A4250B /* colorSets.xml */,
+				EA1A90FD18AD34AF00F587A1 /* MyArduino.xml */,
+				EAB7400218A1741500F0B846 /* Display.xml */,
+				EAB7400318A1741500F0B846 /* External.xml */,
+				EAB7400418A1741500F0B846 /* MSA.xml */,
+				EAB7400518A1741500F0B846 /* MyParts.xml */,
+				EAB7400618A1741500F0B846 /* ofdSpreads_GenSettings.xml */,
+				EAB7400718A1741500F0B846 /* OscEventsFadesSettings.xml */,
+				EAB7400818A1741500F0B846 /* OscEventsOnOffSettings.xml */,
+				EAB7400918A1741500F0B846 /* Others.xml */,
+				EAB7400A18A1741500F0B846 /* Parts.xml */,
+				EAB7400B18A1741500F0B846 /* TubesPatterns.xml */,
+			);
+			name = XML;
+			path = bin/data/XML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1399,13 +1446,14 @@
 				EA738D921897D9B200FDF1D3 /* ofxSimpleGuiPage.cpp in Sources */,
 				EA738CE31897D98A00FDF1D3 /* ofxEasyOscEventMessage.cpp in Sources */,
 				EA738D091897D98A00FDF1D3 /* NetworkingUtilsWin.cpp in Sources */,
+				EA7186F418A502F00061ABB9 /* ofxMyArduinoCommon.cpp in Sources */,
 				EA738D931897D9B200FDF1D3 /* ofxSimpleGuiToo.cpp in Sources */,
 				EA738D351897D98A00FDF1D3 /* SyphonNameboundClient.m in Sources */,
+				EA71877218A5560A0061ABB9 /* ofxSpreadTypo.cpp in Sources */,
 				EA738CF01897D98A00FDF1D3 /* ofxGuiGroup.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				EA738D861897D9B200FDF1D3 /* ofxSimpleGuiButton.cpp in Sources */,
 				EA738D181897D98A00FDF1D3 /* ofxConstraint.cpp in Sources */,
-				EA738D271897D98A00FDF1D3 /* ofxSpreads_XMLsettings.cpp in Sources */,
 				EA738CFD1897D98A00FDF1D3 /* MSAFluidSolver.cpp in Sources */,
 				EA738D3C1897D98A00FDF1D3 /* tinyxmlerror.cpp in Sources */,
 				EA738D8D1897D9B200FDF1D3 /* ofxSimpleGuiSlider2d.cpp in Sources */,
@@ -1417,60 +1465,60 @@
 				BB5F6D97AD3E714A6F414D53 /* ofxDisplay.cpp in Sources */,
 				EA738D891897D9B200FDF1D3 /* ofxSimpleGuiContent.cpp in Sources */,
 				EA738D1A1897D98A00FDF1D3 /* ofxParticle.cpp in Sources */,
+				EA71876B18A5560A0061ABB9 /* ofxSpreadFullShape.cpp in Sources */,
 				EA738D3D1897D98A00FDF1D3 /* tinyxmlparser.cpp in Sources */,
 				EA738D371897D98A00FDF1D3 /* ofxSyphonServer.mm in Sources */,
-				EA738D291897D98A00FDF1D3 /* ofxSpreadTube.cpp in Sources */,
 				EA738CCD1897D98A00FDF1D3 /* ofdAnimation.cpp in Sources */,
 				BFA4140B25470136A2AEC1F0 /* ofxDisplayManager.cpp in Sources */,
+				EA71877018A5560A0061ABB9 /* ofxSpreads_XMLsettings.cpp in Sources */,
 				EA738CF71897D98A00FDF1D3 /* MSACoreGL.cpp in Sources */,
-				EA738D2A1897D98A00FDF1D3 /* ofxSpreadTypo.cpp in Sources */,
-				EA738D201897D98A00FDF1D3 /* ofxSpreadFullShape.cpp in Sources */,
 				EA738D2F1897D98A00FDF1D3 /* ofxSvg.cpp in Sources */,
+				EA71876E18A5560A0061ABB9 /* ofxSpreads_GenSettings.cpp in Sources */,
+				EA71876818A5560A0061ABB9 /* ofxPattern.cpp in Sources */,
 				1077BDF60382A48DFF0CF235 /* ofxDisplayManagerMac.mm in Sources */,
 				EA738D2B1897D98A00FDF1D3 /* src_colors.cpp in Sources */,
 				EA738CF41897D98A00FDF1D3 /* ofxSliderGroup.cpp in Sources */,
-				EA738CCF1897D98A00FDF1D3 /* ofdArduinoCommon.cpp in Sources */,
 				EA738CD41897D98A00FDF1D3 /* ofdTimer.cpp in Sources */,
 				EA738CDA1897D98A00FDF1D3 /* ofxColorSetAnimated.cpp in Sources */,
 				EA738D8F1897D9B200FDF1D3 /* ofxSimpleGuiToggle.cpp in Sources */,
 				EA738D191897D98A00FDF1D3 /* ofxEmitter.cpp in Sources */,
 				EA738D8A1897D9B200FDF1D3 /* ofxSimpleGuiFPSCounter.cpp in Sources */,
 				EA738CD21897D98A00FDF1D3 /* Particle.cpp in Sources */,
+				EA71876D18A5560A0061ABB9 /* ofxSpreads.cpp in Sources */,
 				EA738D391897D98A00FDF1D3 /* CreEPS.cpp in Sources */,
 				EA738CD81897D98A00FDF1D3 /* ofxBasicColorSet.cpp in Sources */,
 				EA738CD31897D98A00FDF1D3 /* ParticleSystem.cpp in Sources */,
+				EA71877118A5560A0061ABB9 /* ofxSpreadTube.cpp in Sources */,
 				EA738D871897D9B200FDF1D3 /* ofxSimpleGuiColorPicker.cpp in Sources */,
 				EA738D911897D9B200FDF1D3 /* ofxSimpleGuiControl.cpp in Sources */,
 				EA738D3A1897D98A00FDF1D3 /* ofxVectorGraphics.cpp in Sources */,
 				B2E0A61EE0DCD8F515D84BD3 /* ofxFenster.cpp in Sources */,
 				EA738CF21897D98A00FDF1D3 /* ofxPanel.cpp in Sources */,
+				EA7186F318A502F00061ABB9 /* ofxMyArduinoClient.cpp in Sources */,
 				EA738D031897D98A00FDF1D3 /* MSAObjCPointer.cpp in Sources */,
 				EA738CEF1897D98A00FDF1D3 /* ofxButton.cpp in Sources */,
 				EA738D881897D9B200FDF1D3 /* ofxSimpleGuiComboBox.cpp in Sources */,
-				EA738D251897D98A00FDF1D3 /* ofxSpreads_GenSettings.cpp in Sources */,
 				EA738CF11897D98A00FDF1D3 /* ofxLabel.cpp in Sources */,
 				EA738D941897D9B200FDF1D3 /* ofxSimpleGuiValueControl.cpp in Sources */,
-				EA738D231897D98A00FDF1D3 /* ofxSpreadPatterns.cpp in Sources */,
 				EA738D0A1897D98A00FDF1D3 /* UdpSocketWin.cpp in Sources */,
 				EA738CD11897D98A00FDF1D3 /* msaFluidParticlesApp.cpp in Sources */,
 				9D8E9DD97C73F87403F4F781 /* ofxFensterCanvas.cpp in Sources */,
-				EA738D261897D98A00FDF1D3 /* ofxSpreads_InitShapes.cpp in Sources */,
 				EA738D8E1897D9B200FDF1D3 /* ofxSimpleGuiTitle.cpp in Sources */,
 				EA738D171897D98A00FDF1D3 /* ofxAttractor.cpp in Sources */,
 				D72A44DF07AD3209869A73C2 /* ofxFensterManager.cpp in Sources */,
 				EA738CF31897D98A00FDF1D3 /* ofxSlider.cpp in Sources */,
-				EA738D1C1897D98A00FDF1D3 /* ofxPattern.cpp in Sources */,
 				EA738D121897D98A00FDF1D3 /* ofxOscReceiver.cpp in Sources */,
-				EA738CCE1897D98A00FDF1D3 /* ofdArduinoClient.cpp in Sources */,
+				EA71876F18A5560A0061ABB9 /* ofxSpreads_InitShapes.cpp in Sources */,
+				EA7186F518A502F00061ABB9 /* ofxMyArduinoServer.cpp in Sources */,
 				EA738CE21897D98A00FDF1D3 /* ofxEasyOsc.cpp in Sources */,
 				EA738D2E1897D98A00FDF1D3 /* svgtiny_list.cpp in Sources */,
-				EA738CD01897D98A00FDF1D3 /* ofdArduinoServer.cpp in Sources */,
+				EA71876C18A5560A0061ABB9 /* ofxSpreadPatterns.cpp in Sources */,
 				EA738D901897D9B200FDF1D3 /* ofxSimpleGuiConfig.cpp in Sources */,
 				EA738D0B1897D98A00FDF1D3 /* OscOutboundPacketStream.cpp in Sources */,
 				EA738CFC1897D98A00FDF1D3 /* MSAFluidDrawerBase.cpp in Sources */,
 				EA738D111897D98A00FDF1D3 /* ofxOscParameterSync.cpp in Sources */,
 				EA738CE41897D98A00FDF1D3 /* ofxEasyOscReader.cpp in Sources */,
-				EA738D1E1897D98A00FDF1D3 /* ofxSpreadDisplay.cpp in Sources */,
+				EA71876918A5560A0061ABB9 /* ofxSpreadDisplay.cpp in Sources */,
 				EA738D361897D98A00FDF1D3 /* ofxSyphonClient.mm in Sources */,
 				EA738D9B1897DA5F00FDF1D3 /* ofdRays.cpp in Sources */,
 				EA738D3E1897D98A00FDF1D3 /* ofxXmlSettings.cpp in Sources */,
@@ -1480,8 +1528,8 @@
 				EA738D0F1897D98A00FDF1D3 /* ofxOscBundle.cpp in Sources */,
 				EA738CEE1897D98A00FDF1D3 /* ofxBaseGui.cpp in Sources */,
 				EA738D8C1897D9B200FDF1D3 /* ofxSimpleGuiQuadWarp.cpp in Sources */,
+				EA71876A18A5560A0061ABB9 /* ofxSpreadElement.cpp in Sources */,
 				EA738D3B1897D98A00FDF1D3 /* tinyxml.cpp in Sources */,
-				EA738D1F1897D98A00FDF1D3 /* ofxSpreadElement.cpp in Sources */,
 				EA738D0E1897D98A00FDF1D3 /* OscTypes.cpp in Sources */,
 				EA738D101897D98A00FDF1D3 /* ofxOscMessage.cpp in Sources */,
 				EA738D1B1897D98A00FDF1D3 /* ofxParticleWorld.cpp in Sources */,
@@ -1491,7 +1539,6 @@
 				EA738D061897D98A00FDF1D3 /* IpEndpointName.cpp in Sources */,
 				EA738D131897D98A00FDF1D3 /* ofxOscSender.cpp in Sources */,
 				EA738CF61897D98A00FDF1D3 /* ofxLiveGrabber.cpp in Sources */,
-				EA738D241897D98A00FDF1D3 /* ofxSpreads.cpp in Sources */,
 				EA738D071897D98A00FDF1D3 /* NetworkingUtils.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

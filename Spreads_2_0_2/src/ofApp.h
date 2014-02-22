@@ -16,6 +16,10 @@
 //#include "ofdFx.h" // Removed fx because of syphon + Resolume
 //#include "ofdTools.h"
 
+#define WindowWidth     1400
+#define WindowHeight    1050
+
+
 typedef struct {
     string  name;
     bool    action;
@@ -63,14 +67,17 @@ private:
     
 private:
     // New display system
-    ofdSpreadDisplay m_spreadDisplay;
+    ofdSpreadDisplay m_oSpreadDisplay;
     
     // GUI -------------------------------------------------
     ofxPanel m_uiColors;
     ofxPanel m_uiParts;
     ofxPanel m_uiTubesPatterns;
+    ofxPanel m_uiArduino;
     ofxPanel m_uiMSA;
-    ofxPanel m_uiEasyOsc;
+    ofxPanel m_uiEasyOscOnOff;
+    ofxPanel m_uiEasyOscFades;
+    ofxPanel m_uiDisplay;
     
     ofxPanel m_uiOthers;
     ofxIntSlider m_slSetLogLevel;
